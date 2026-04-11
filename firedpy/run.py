@@ -26,7 +26,6 @@ def cleanup_intermediate_files(project_directory):
     """
     shutil.rmtree(os.path.join(project_directory, "rasters", "burn_area"))
     shutil.rmtree(os.path.join(project_directory, "rasters", "land_cover"))
-    shutil.rmtree(os.path.join(project_directory, "rasters", "eco_region"))
 
 def fired(
     project_directory,
@@ -41,9 +40,9 @@ def fired(
     daily=True,
     shape_type="gpkg",
     eco_region_type=None,
-    eco_region_level=0,
-    land_cover_type=0,
-    full_csv=True,
+    eco_region_level=3,
+    land_cover_type=None,
+    csv_type="none",
     n_cores=0,
     cleanup=False
 ):
@@ -82,12 +81,10 @@ def fired(
         be created, otherwise only the event level.
     shape_type : str
         Build shapefiles from the event data frame. Specify either "shp",
-        "gpkg", or both. Shapefiles of both daily progression and overall
-        event perimeters will be written to the 'outputs/shapefiles' folder of
-        the chosen project directory. These will be saved in the specified
-        geopackage format (.gpkg), ERSI Shapefile format (.shp), or save them
-        in both formats using the file basename of the fire event data frame
-        (e.g. 'fired_events_daily.gpkg' and 'fired_events.gpkg').
+        "gpkg", or both. Output files are written directly to the 'outputs/'
+        folder of the chosen project directory in the specified geopackage
+        format (.gpkg), ESRI Shapefile format (.shp), or both (e.g.
+        'fired_events_daily.gpkg' and 'fired_events.gpkg').
     eco_region_level : int
         The desired Ecoregions level from the North American Commission for
         Environmental Cooperation (CEC). Levels 1 to 3 are available, with
@@ -124,11 +121,11 @@ def fired(
         If you do not have an account register at
         https://urs.earthdata.nasa.gov/home.
 
-        Defaults to 0 (None).
-    full_csv : bool
-        Export all attributes to CSV. Defaults to only x and y coordinates,
-        event date, and event id will be exported to a CSV. Defaults to
-        True.
+        Defaults to None.
+    csv_type : str
+        Controls CSV output (case-insensitive). Options: 'full' (all
+        attributes), 'events' (x, y, id, ig_date, last_date only), or 'none'
+        (no CSV written). Defaults to 'none'.
     n_cores : int
         Number of cores to use for parallel processing. A value of 0 or None
         will use all available cores. Defaults to 0.
@@ -148,7 +145,8 @@ def fired(
 
     # Setup logging for this output directory
     project_directory = Path(project_directory).expanduser().absolute()
-    init_logger(project_directory=project_directory)
+    run_name = f"fired_{project_name}" if project_name else None
+    init_logger(project_directory=project_directory, run_name=run_name)
     logger.info(
         f"Running firedpy for years {start_year} to {end_year} on MODIS "
         f"tiles: {tiles}."
@@ -235,7 +233,6 @@ def fired(
             msg = f"Adding World Terrestrial Ecoregions from WWF."
             logger.info(msg)
             eco_region_data = EcoRegion(project_directory=project_directory)
-            eco_region_data.get_eco_region()
             gdf = eco_region_data.add_eco_region_attributes(
                 gdf=gdf,
                 eco_region_type=eco_region_type
@@ -265,7 +262,7 @@ def fired(
             end_year=end_year,
             daily=daily,
             shape_type=shape_type,
-            full_csv=full_csv
+            csv_type=csv_type
         )
 
         # Done with processing, collect time and memory usage
@@ -291,8 +288,10 @@ def fired(
             runtime=runtime,
             n_cores=n_cores,
             peak_memory=peak_memory,
-            start_year = start_year,
-            end_year = end_year 
+            start_year=start_year,
+            end_year=end_year,
+            run_name=run_name,
+            country=country,
         )
 
     # Remove intermediate files if requested
