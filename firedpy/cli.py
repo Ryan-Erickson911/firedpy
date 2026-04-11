@@ -257,7 +257,7 @@ def _prompts(ctx, _, interactive):
 )
 @click.option(
     "-el", "--eco_region_level",
-    default=1,
+    default=0,
     is_eager=True,
     help=CLI_HELP["eco_region_level"]
 )

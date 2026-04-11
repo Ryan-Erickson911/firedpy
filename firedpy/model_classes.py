@@ -1076,8 +1076,8 @@ class ModelBuilder(Base):
             )
         return files
 
-    def get_output_paths(self, project_name, project_directory,
-                         start_year, end_year, shape_type):
+    def get_output_paths(self, project_name, project_directory,start_year, 
+                         end_year, shape_type, spatial_param, temporal_param):
         """Get dictionary of all output paths for a firedpy run.
 
         Parameters
@@ -1101,7 +1101,7 @@ class ModelBuilder(Base):
         dict : Dictionary of paths for final firedpy outputs.
         """
         # Set base name
-        base_file_name = f"fired_{project_name}_{start_year}_to_{end_year}"
+        base_file_name = f"fired_{project_name}_{start_year}_to_{end_year}_s{spatial_param}t{temporal_param}"
 
         # Set and create output directory
         model_outputs_dir = Path(project_directory).joinpath("outputs")
@@ -1355,6 +1355,8 @@ class ModelBuilder(Base):
         end_year,
         daily,
         shape_type,
+        spatial_param,
+        temporal_param,
         csv_type
     ):
         """Save event data to various output formats.
@@ -1394,7 +1396,9 @@ class ModelBuilder(Base):
             project_directory=project_directory,
             start_year=start_year,
             end_year=end_year,
-            shape_type=shape_type
+            shape_type=shape_type,
+            spatial_param=spatial_param,
+            temporal_param=temporal_param
         )
 
         # Process and write daily-level events to file if requested

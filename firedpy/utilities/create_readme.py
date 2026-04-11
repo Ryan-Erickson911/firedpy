@@ -11,14 +11,14 @@ logger = logging.getLogger(__name__)
 SUMMARY_TEMPLATE = DATA_DIR.joinpath("SUMMARY_TEMPLATE.txt")
 
 
-def add_file_list(lines, output_directory, run_name, start_year, end_year):
+def add_file_list(lines, output_directory, run_name, start_year, end_year, spatial_param, temporal_param):
     """Make a formatted list of files produced by this specific run.
 
     Only includes files whose names match the run's naming pattern, so that
     re-running firedpy in the same output directory does not pollute the file
     list with outputs from previous runs.
     """
-    run_prefix = f"{run_name}_{start_year}_to_{end_year}"
+    run_prefix = f"{run_name}_{start_year}_to_{end_year}_s{spatial_param}t{temporal_param}"
 
     tables = sorted(output_directory.glob(f"{run_prefix}*.csv"))
     gpkgs = sorted(output_directory.glob(f"{run_prefix}*.gpkg"))
@@ -175,8 +175,7 @@ def make_read_me(gdf, project_directory, tiles, spatial_param,
         lines = template.readlines()
 
     # Custom work for the files: only list outputs from this specific run
-    lines_w_files = add_file_list(lines, output_directory, run_name,
-                                  start_year, end_year)
+    lines_w_files = add_file_list(lines, output_directory, run_name, start_year, end_year,spatial_param,temporal_param)
 
     # Format template
     formatted_lines = []
@@ -185,7 +184,7 @@ def make_read_me(gdf, project_directory, tiles, spatial_param,
         formatted_lines.append(formatted_line)
 
     # Write to a README in the outputs directory
-    fname = f"{run_name.lower()}_{start_year}_{end_year}_readme.txt" # make readme include dates for unique outputs
+    fname = f"{run_name.lower()}_{start_year}_{end_year}_s{spatial_param}t{temporal_param}_readme.txt" # make readme include dates for unique outputs
     fpath = output_directory.joinpath(fname)
     with open(fpath, "w") as summary:
         for line in formatted_lines:

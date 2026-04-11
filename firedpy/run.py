@@ -40,9 +40,9 @@ def fired(
     daily=True,
     shape_type="gpkg",
     eco_region_type=None,
-    eco_region_level=3,
-    land_cover_type=None,
-    csv_type="none",
+    eco_region_level=0,
+    land_cover_type=0,
+    csv_type=None,
     n_cores=0,
     cleanup=False
 ):
@@ -244,7 +244,6 @@ def fired(
             msg = f"Adding NA ecoregions from North American ecoregions: {eco_desc}, Level {eco_region_level}."
             logger.info(msg)            
             eco_region_data = EcoRegion(project_directory=project_directory)
-            eco_region_data.get_eco_region()
             gdf = eco_region_data.add_eco_region_attributes(
                 gdf=gdf,
                 eco_region_type=eco_region_type,
@@ -262,7 +261,9 @@ def fired(
             end_year=end_year,
             daily=daily,
             shape_type=shape_type,
-            csv_type=csv_type
+            csv_type=csv_type,
+            spatial_param=spatial_param,
+            temporal_param=temporal_param
         )
 
         # Done with processing, collect time and memory usage

@@ -607,6 +607,7 @@ class BurnData(LPDAAC):
                 # Collect results 
                 download_dir = self.hdf_dir.joinpath(tile)
                 download_dirs[tile] = download_dir
+                os.makedirs(download_dir, exist_ok=True) # make sure folder is there before checking
                 if len(os.listdir(download_dir)) == 0:
                     tile_granules[tile] = granules
                     need[tile] = True
@@ -1470,6 +1471,7 @@ class EcoRegion(Base):
         eco_region_type : str
             Specify the ecoregion type as either 'world' or 'na':
 
+                None = Omits eco region attributes
                 'world' = World Terrestrial Ecoregions (World Wildlife Fund)
                 'na' = North American ecoregions (Omernick, 1987)
 
@@ -1487,7 +1489,7 @@ class EcoRegion(Base):
             The desired Ecoregions level from the North American Commission for
             Environmental Cooperation (CEC). Levels 1 to 3 are available, with
             level 1 representing the broadest scale and level III representing
-            the most detailed. Defaults to None.
+            the most detailed. Defaults to 0.
 
         Returns
         -------
