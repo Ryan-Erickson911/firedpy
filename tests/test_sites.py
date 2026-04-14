@@ -27,9 +27,9 @@ def test_iceland(cores):
         daily=True,
         shape_type="gpkg",
         eco_region_type=None,
-        eco_region_level=3,
-        land_cover_type=None,
-        full_csv=True,
+        eco_region_level=0,
+        land_cover_type=0,
+        csv_type=None,
         n_cores=cores,
         cleanup=True
     )
