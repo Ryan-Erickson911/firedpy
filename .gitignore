@@ -111,9 +111,6 @@ ENV/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
-
 # mypy
 .mypy_cache/
 
@@ -131,6 +128,7 @@ tags
 # Scratch and temp work
 .tmp/
 .scratch/
+scratch/
 
 
 # pixi environments

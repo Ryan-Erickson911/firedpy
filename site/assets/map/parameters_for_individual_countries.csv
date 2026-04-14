@@ -1,0 +1,246 @@
+country_name,continent,spatial,temporal,Proper Case,MapJoin
+aland,Europe,"5","11",Aland,Aland Islands
+albania,Europe,"5","11",Albania,Albania
+algeria,Africa,"5","11",Algeria,Algeria
+andorra,Europe,"5","11",Andorra,Andorra
+austria,Europe,"5","11",Austria,Austria
+belarus,Europe,"5","11",Belarus,Belarus
+belgium,Europe,"5","11",Belgium,Belgium
+bosnia_and_herzegovina,Europe,"5","11",Bosnia and Herzegovina,Bosnia and Herzegovina
+bulgaria,Europe,"5","11",Bulgaria,Bulgaria
+canada,North America,"5","11",Canada,Canada
+croatia,Europe,"5","11",Croatia,Croatia
+czechia,Europe,"5","11",Czechia,Czech Republic
+denmark,Europe,"5","11",Denmark,Denmark
+djibouti,Africa,"5","11",Djibouti,Djibouti
+egypt,Africa,"5","11",Egypt,Egypt
+estonia,Europe,"5","11",Estonia,Estonia
+faroe_islands,Europe,"5","11",Faroe Islands,Faroe Islands
+finland,Europe,"5","11",Finland,Finland
+france,Europe,"5","11",France,France
+germany,Europe,"5","11",Germany,Germany
+greece,Europe,"5","11",Greece,Greece
+guernsey,Europe,"5","11",Guernsey,Guernsey
+hong_kong,Asia,"5","11",Hong Kong,Hong Kong
+hungary,Europe,"5","11",Hungary,Hungary
+iceland,Europe,"5","11",Iceland,Iceland
+ireland,Europe,"5","11",Ireland,Ireland
+isle_of_man,Europe,"5","11",Isle Of Man,Isle of Man
+italy,Europe,"5","11",Italy,Italy
+jersey,Europe,"5","11",Jersey,Jersey
+jordan,Asia,"5","11",Jordan,Jordan
+kosovo,Europe,"5","11",Kosovo,Kosovo
+kuwait,Asia,"5","11",Kuwait,Kuwait
+latvia,Europe,"5","11",Latvia,Latvia
+lebanon,Asia,"5","11",Lebanon,Lebanon
+libya,Africa,"5","11",Libya,Libyan Arab Jamahiriya
+liechtenstein,Europe,"5","11",Liechtenstein,Liechtenstein
+lithuania,Europe,"5","11",Lithuania,Lithuania
+luxembourg,Europe,"5","11",Luxembourg,Luxembourg
+macedonia,Europe,"5","11",Macedonia,The former Yugoslav Republic of Macedonia
+malta,Europe,"5","11",Malta,Malta
+mauritania,Africa,"5","11",Mauritania,Mauritania
+moldova,Europe,"5","11",Moldova,Republic of Moldova
+monaco,Europe,"5","11",Monaco,Monaco
+mongolia,Asia,"5","11",Mongolia,Mongolia
+montenegro,Europe,"5","11",Montenegro,Montenegro
+morocco,Africa,"5","11",Morocco,Morocco
+netherlands,Europe,"5","11",Netherlands,Netherlands
+northern_cyprus,europe,"5","11",Northern Cyprus,Northern Cyprus
+norway,Europe,"5","11",Norway,Norway
+oman,Asia,"5","11",Oman,Oman
+palestine,Asia,"5","11",Palestine,Palestine
+poland,Europe,"5","11",Poland,Poland
+portugal,Europe,"5","11",Portugal,Portugal
+qatar,Asia,"5","11",Qatar,Qatar
+republic_of_serbia,Europe,"5","11",Republic Of Serbia,Serbia
+romania,Europe,"5","11",Romania,Romania
+russia,Europe,"5","11",Russia,Russia
+saudi_arabia,Asia,"5","11",Saudi Arabia,Saudi Arabia
+slovakia,Europe,"5","11",Slovakia,Slovakia
+slovenia,Europe,"5","11",Slovenia,Slovenia
+somalia,Africa,"5","11",Somalia,Somalia
+somaliland,Africa,"5","11",Somaliland,Somaliland
+spain,Europe,"5","11",Spain,Spain
+sweden,Europe,"5","11",Sweden,Sweden
+switzerland,Europe,"5","11",Switzerland,Switzerland
+syria,Asia,"5","11",Syria,Syrian Arab Republic
+tunisia,Africa,"5","11",Tunisia,Tunisia
+ukraine,Europe,"5","11",Ukraine,Ukraine
+united_arab_emirates,Asia,"5","11",United Arab Emirates,United Arab Emirates
+united_kingdom,Europe,"5","11",United Kingdom,United Kingdom
+usa_alaska,North America,"5","11",Usa Alaska,Usa Alaska
+usa_lower48,North America,"5","11",Usa Lower48,Usa Lower48
+vatican,Europe,"5","11",Vatican,Holy See (Vatican City)
+western_sahara,Africa,"5","11",Western Sahara,Western Sahara
+yemen,Asia,"5","11",Yemen,Yemen
+afghanistan,Asia,"3","8",Afghanistan,Afghanistan
+american_samoa,Oceania,"3","8",American Samoa,American Samoa
+anguilla,North America,"3","8",Anguilla,Anguilla
+antigua_and_barbuda,Carribean,"3","8",Antigua and Barbuda,Antigua and Barbuda
+armenia,Asia,"3","8",Armenia,Armenia
+aruba,North America,"3","8",Aruba,Aruba
+ashmore_and_cartier_islands,Oceania,"3","8",Ashmore and Cartier Islands,Ashmore and Cartier Islands
+australia,Australia,"3","8",Australia,Australia
+azerbaijan,Asia,"3","8",Azerbaijan,Azerbaijan
+barbados,North America,"3","8",Barbados,Barbados
+belize,North America,"3","8",Belize,Belize
+bermuda,North America,"3","8",Bermuda,Bermuda
+bhutan,Asia,"3","8",Bhutan,Bhutan
+british_indian_ocean_territory,Oceania,"3","8",British Indian Ocean Territory,British Indian Ocean Territory
+british_virgin_islands,Carribean,"3","8",British Virgin Islands,British Virgin Islands
+cayman_islands,Carribean,"3","8",Cayman Islands,Cayman Islands
+chile,South America,"3","8",Chile,Chile
+china,Asia,"3","8",China,China
+cook_islands,Oceania,"3","8",Cook Islands,Cook Islands
+costa_rica,North America,"3","8",Costa Rica,Costa Rica
+cuba,North America,"3","8",Cuba,Cuba
+curacao,North America,"3","8",Curacao,Curacao
+cyprus,Asia,"3","8",Cyprus,Cyprus
+dominica,North America,"3","8",Dominica,Dominica
+dominican_republic,Carribean,"3","8",Dominican Republic,Dominican Republic
+dutch_carribean_colonies,Carribean,"3","8",Dutch Carribean Colonies,Netherlands Antilles
+east_timor,Oceania,"3","8",East Timor,Timor-Leste
+el_salvador,North America,"3","8",El Salvador,El Salvador
+equatorial_guinea,Africa,"3","8",Equatorial Guinea,Equatorial Guinea
+falkland_islands,South America,"3","8",Falkland Islands,Falkland Islands (Malvinas)
+federated_states_of_micronesia,Oceania,"3","8",Federated States Of Micronesia,"Micronesia, Federated States of"
+fiji,Oceania,"3","8",Fiji,Fiji
+french_guiana,South America,"3","8",French Guiana,French Guiana
+french_polynesia,Oceania,"3","8",French Polynesia,French Polynesia
+french_southern_and_antarctic_lands,Oceania,"3","8",French Southern and Antarctic Lands,French Southern and Antarctic Lands
+georgia,Asia,"3","8",Georgia,Georgia
+greenland,North America,"3","8",Greenland,Greenland
+grenada,North America,"3","8",Grenada,Grenada
+guadelopupe_and_martinique,Carribean,"3","8",Guadelopupe,Guadelopupe
+guadelopupe_and_martinique,Carribean,"3","8",Martinique,Martinique
+guam,Oceania,"3","8",Guam,Guam
+guatemala,North America,"3","8",Guatemala,Guatemala
+guyana,South America,"3","8",Guyana,Guyana
+haiti,North America,"3","8",Haiti,Haiti
+heard_island_and_mcdonald_islands,Oceania,"3","8",Heard Island and Mcdonald Islands,Heard Island and McDonald Islands
+honduras,North America,"3","8",Honduras,Honduras
+indian_ocean_territories,Oceania,"3","8",Indian Ocean Territories,Christmas Island
+iran,Asia,"3","8",Iran,Iran (Islamic Republic of)
+iraq,Asia,"3","8",Iraq,Iraq
+israel,Asia,"3","8",Israel,Israel
+jamaica,North America,"3","8",Jamaica,Jamaica
+japan,Asia,"3","8",Japan,Japan
+kazakhstan,Asia,"3","8",Kazakhstan,Kazakhstan
+kiribati,Oceania,"3","8",Kiribati,Kiribati
+kyrgyzstan,Asia,"3","8",Kyrgyzstan,Kyrgyzstan
+maldives,Oceania,"3","8",Maldives,Maldives
+marshall_islands,Oceania,"3","8",Marshall Islands,Marshall Islands
+mauritius,Oceania,"3","8",Mauritius,Mauritius
+mexico,North America,"3","8",Mexico,Mexico
+montserrat,North America,"3","8",Montserrat,Montserrat
+nauru,Oceania,"3","8",Nauru,Nauru
+nepal,Asia,"3","8",Nepal,Nepal
+new_caledonia,Oceania,"3","8",New Caledonia,New Caledonia
+new_zealand,Oceania,"3","8",New Zealand,New Zealand
+nicaragua,North America,"3","8",Nicaragua,Nicaragua
+niue,Oceania,"3","8",Niue,Niue
+norfolk_island,Oceania,"3","8",Norfolk Island,Norfolk Island
+north_korea,asia,"3","8",North Korea,"Korea, Democratic People's Republic of"
+northern_mariana_islands,Oceania,"3","8",Northern Mariana Islands,Northern Mariana Islands
+pakistan,Asia,"3","8",Pakistan,Pakistan
+palau,Oceania,"3","8",Palau,Palau
+panama,North America,"3","8",Panama,Panama
+peru,South America,"3","8",Peru,Peru
+pitcairn_islands,Oceania,"3","8",Pitcairn Islands,Pitcairn Islands
+puerto_rico,Carribean,"3","8",Puerto Rico,Puerto Rico
+saint_barthelemy,Carribean,"3","8",Saint Barthelemy,Saint Barthelemy
+saint_helena,Oceania,"3","8",Saint Helena,Saint Helena
+saint_kitts_and_nevis,Carribean,"3","8",Saint Kitts and Nevis,Saint Kitts and Nevis
+saint_lucia,Carribean,"3","8",Saint Lucia,Saint Lucia
+saint_martin,Carribean,"3","8",Saint Martin,Saint Martin
+saint_pierre_and_miquelon,North America,"3","8",Saint Pierre and Miquelon,Saint Pierre and Miquelon
+saint_vincent_and_the_grenadines,Carribean,"3","8",Saint Vincent and The Grenadines,Saint Vincent and the Grenadines
+samoa,Oceania,"3","8",Samoa,Samoa
+san_marino,Carribean,"3","8",San Marino,San Marino
+seychelles,Oceania,"3","8",Seychelles,Seychelles
+sint_maarten,Carribean,"3","8",Sint Maarten,Sint Maarten
+solomon_islands,Oceania,"3","8",Solomon Islands,Solomon Islands
+south_georgia_and_the_islands,Oceania,"3","8",South Georgia and The Islands,South Georgia South Sandwich Islands
+south_korea,Asia,"3","8",South Korea,"Korea, Republic of"
+sri_lanka,Oceania,"3","8",Sri Lanka,Sri Lanka
+suriname,South America,"3","8",Suriname,Suriname
+tajikistan,Asia,"3","8",Tajikistan,Tajikistan
+the_bahamas,Carribean,"3","8",Bahamas,Bahamas
+tonga,Oceania,"3","8",Tonga,Tonga
+trinidad_and_tobago,Carribean,"3","8",Trinidad and Tobago,Trinidad and Tobago
+turkey,Asia,"3","8",Turkey,Turkey
+turkmenistan,Asia,"3","8",Turkmenistan,Turkmenistan
+turks_and_caicos_islands,Carribean,"3","8",Turks and Caicos Islands,Turks and Caicos Islands
+united_states_virgin_islands,Carribean,"3","8",United States Virgin Islands,United States Minor Outlying Islands
+usa_hawaii,Oceania,"3","8",Usa Hawaii,United States
+uzbekistan,Asia,"3","8",Uzbekistan,Uzbekistan
+vanuatu,Oceania,"3","8",Vanuatu,Vanuatu
+wallis_and_futuna,Oceania,"3","8",Wallis and Futuna,Wallis and Futuna Islands
+angola,Africa,"1","1",Angola,Angola
+argentina,South America,"1","2",Argentina,Argentina
+bahrain,Asia,"1","2",Bahrain,Bahrain
+bangladesh,Asia,"1","2",Bangladesh,Bangladesh
+benin,Africa,"1","1",Benin,Benin
+bolivia,South America,"1","2",Bolivia,Bolivia
+botswana,Africa,"1","1",Botswana,Botswana
+brazil,South America,"1","2",Brazil,Brazil
+brunei,Asia,"1","2",Brunei,Brunei Darussalam
+burkina_faso,Africa,"1","1",Burkina Faso,Burkina Faso
+burundi,Africa,"1","1",Burundi,Burundi
+cabo_verde,Africa,"1","1",Cabo Verde,Cape Verde
+cambodia,Asia,"1","2",Cambodia,Cambodia
+cameroon,Africa,"1","1",Cameroon,Cameroon
+central_african_republic,Africa,"1","1",Central African Republic,Central African Republic
+chad,Africa,"1","1",Chad,Chad
+colombia,South America,"1","2",Colombia,Colombia
+comoros,Africa,"1","1",Comoros,Comoros
+democratic_republic_of_the_congo,Africa,"1","1",Democratic Republic of the Congo,Democratic Republic of the Congo
+ecuador,South America,"1","2",Ecuador,Ecuador
+eritrea,Africa,"1","1",Eritrea,Eritrea
+eswatini,Africa,"1","1",Eswatini,Swaziland
+ethiopia,Africa,"1","1",Ethiopia,Ethiopia
+gabon,Africa,"1","1",Gabon,Gabon
+gambia,Africa,"1","1",Gambia,Gambia
+ghana,Africa,"1","1",Ghana,Ghana
+guinea,Africa,"1","1",Guinea,Guinea
+guinea_bissau,Africa,"1","1",Guinea Bissau,Guinea-Bissau
+india,Asia,"1","2",India,India
+indonesia,Asia,"1","2",Indonesia,Indonesia
+ivory_coast,Africa,"1","1",Ivory Coast,Cote d'Ivoire
+kenya,Africa,"1","1",Kenya,Kenya
+laos,Asia,"1","2",Laos,Lao People's Democratic Republic
+lesotho,Africa,"1","1",Lesotho,Lesotho
+liberia,Africa,"1","1",Liberia,Liberia
+macao,Asia,"1","2",Macao,Macau
+madagascar,Africa,"1","1",Madagascar,Madagascar
+malawi,Africa,"1","1",Malawi,Malawi
+malaysia,Asia,"1","2",Malaysia,Malaysia
+mali,Africa,"1","1",Mali,Mali
+mozambique,Africa,"1","1",Mozambique,Mozambique
+myanmar,Asia,"1","2",Myanmar,Burma
+namibia,Africa,"1","1",Namibia,Namibia
+niger,Africa,"1","1",Niger,Niger
+nigeria,Africa,"1","1",Nigeria,Nigeria
+papua_new_guinea,Oceania,"1","2",Papua New Guinea,Papua New Guinea
+paraguay,South America,"1","2",Paraguay,Paraguay
+philippines,Asia,"1","2",Philippines,Philippines
+republic_of_the_congo,Africa,"1","1",Congo,Congo
+rwanda,Africa,"1","1",Rwanda,Rwanda
+sao_tome_and_principe,Africa,"1","1",Sao Tome and Principe,Sao Tome and Principe
+senegal,Africa,"1","1",Senegal,Senegal
+sierra_leone,Africa,"1","1",Sierra Leone,Sierra Leone
+singapore,Asia,"1","2",Singapore,Singapore
+south_africa,Africa,"1","1",South Africa,South Africa
+south_sudan,Africa,"1","1",South Sudan,South Sudan
+sudan,Africa,"1","1",Sudan,Sudan
+taiwan,Asia,"1","2",Taiwan,Taiwan
+tanzania,Africa,"1","1",Tanzania,United Republic of Tanzania
+thailand,Asia,"1","2",Thailand,Thailand
+togo,Africa,"1","1",Togo,Togo
+uganda,Africa,"1","1",Uganda,Uganda
+uruguay,South America,"1","2",Uruguay,Uruguay
+venezuela,South America,"1","2",Venezuela,Venezuela
+vietnam,Asia,"1","2",Vietnam,Viet Nam
+zambia,Africa,"1","1",Zambia,Zambia
+zimbabwe,Africa,"1","1",Zimbabwe,Zimbabwe
