@@ -70,15 +70,17 @@ input, select, textarea {
 .to-top {
     display: none;
     position: fixed;
+	width:  48px;
+	height: 48px;
     bottom: 30px;
     right: 30px;
-    background: #444;
+    background: rgba(10, 66, 188,0.8);
     color: white;
-    padding: 12px 12px;
+    padding: 4px 18px;
     border-radius: 25%;
     font-size: 20px;
     text-decoration: none;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 4px rgba(48, 166, 78, 0.3);
     opacity: 0.7;
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
@@ -90,13 +92,49 @@ input, select, textarea {
 .to-top:hover {
     opacity: 1;
     transform: scale(1.1);
+	color: #000;
+	background: #30a64e;
 }
+
+.legend {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  	font-family: sans-serif;
+  	font-size: 14px;
+	padding: 10px;
+}
+
+.legend:after{
+	background: rgba(144, 144, 144, 0.829);
+	content: '';
+	display: inline-block;
+	height: 1px;
+}
+
+.legend-item {
+	display: flex;
+	text-align: left;
+	gap: 16px;
+}
+
+.square {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: 1px solid #333;
+}
+
+.sq1 { background: #ffffff; }
+.sq2 { background: #000000; }
+.sq3 { background: #ff9933; }
+
 	#sidebar {
 		position: absolute;
 		left: 0;
 		top: 0;
 		bottom: 0;
-		width: 320px;
+		width: 250px;
 		overflow-y: auto;
 		background: #f8f8f8;
 		padding: 10px;
@@ -126,8 +164,8 @@ input, select, textarea {
 /* Map */
 
     #map {
-		width: 65%;
-		height: 1080px; 
+		width: 75%;
+		height: 900px; 
 		color: black;
 	}
 
@@ -2983,9 +3021,9 @@ input, select, textarea {
 		width: 100%;
 		background: #ffffffff;
 		color: rgb(150, 150, 150);
-		padding-top: 15px;
-		padding-bottom: 10px;
-		z-index: 9;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		z-index: 9999;
 		transition: 0.5s ease;
 	}
 

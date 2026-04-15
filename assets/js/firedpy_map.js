@@ -62,7 +62,7 @@ function countryStyle(feature) {
     if (p.f_file_name) count++;
 
     // Choose color based on count
-    let fillColor = "#ffffff"; // default white
+    let fillColor = "#464646"; // default white
     if (count === 3) fillColor = "#ff0000";      // red
     else if (count === 2) fillColor = "#ffff00"; // yellow
     else if (count === 1) fillColor = "#ffffff"; // white

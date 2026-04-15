@@ -14,13 +14,13 @@
 	<body class="is-preload">
 
 		<!-- Top Header -->
+		<div id="top"></div>
 		<div id="scrollheader">
 			<header class="col-12">
 				<span><a href="https://earthlab.colorado.edu/"><img src="assets/imgs/earthlab_homepage.png" style="width: 150px;"/></a></span>
 			</header>
 		</div>
 		<!-- Header -->
-			<div id="top"></div>
 			<section id="header">
 				<div class="inner">
 					<span><img src="assets/imgs/earthlab_logo.png" style="width: 200px;"/></span>
@@ -45,8 +45,8 @@
 								<h2>A Python Command-Line Interface for classifying fire events from the Collection 6 MODIS Burned Area Product.</h2>
 							</header>
 							<span class="image fit"><img src="assets/imgs/rim_fire_ca.png" alt="" /></span>
-							<p>This package uses a space-time window to classify individual burn detections from late 2001 to near-present into discrete events and return both a data table and shapefiles of these events.</p>
-							<header id="authors" class="major">
+							<p id="authors">This package uses a space-time window to classify individual burn detections from late 2001 to near-present into discrete events and return both a data table and shapefiles of these events.</p>
+							<header class="major">
 								<h2>Methodological information for FIREDpy 1.0:</h2>
 							</header>
 							<p>Balch, J. K., St. Denis, L. A., Mahood, A. L., Mietkiewicz, N. P., Williams, T. W., McGlinchy J, and Cook, M. C. 2020. FIRED (Fire Events Delineation): An open, flexible algorithm & database of U.S. fire events derived from the MODIS burned area product (2001-19). Remote Sensing, 12(21), 3498; <a href="https://doi.org/10.3390/rs12213498.">https://doi.org/10.3390/rs12213498.</a></p>
@@ -68,7 +68,7 @@
 					<div class="row gtr-150">
 						<div class="col-12">
 							<header class="major">
-								<h1>Proccessed Countries</h1>
+								<h1 style="margin:0;">Proccessed Countries</h1>
 							</header>
 							<p>Click on your favorite country to view avaliable fire perimeter datasets</p>
 						</div>
@@ -76,7 +76,19 @@
 				</div>
 				<center><div id="map">
 					<div id="sidebar">
-						<h2 style="color: black;">Countries</h2>
+						<h2 style="color: black; text-align: center; margin:0;">Avaliable Datasets</h2>
+						<div class="legend">
+							<div class="legend-item">
+								<span class="square sq1"></span>FIREDpy 1.0 V2022<br>(variable ST) 
+							</div>
+							<div class="legend-item">
+								<span class="square sq2"></span>FIREDpy 2.0 V2024S1T5<br>(-sp = 1 pixel, -tp = 5 days)
+							</div>
+							<div class="legend-item">
+								<span class="square sq3"></span>FIREDpy 2.0 V2024VST<br>(variable ST)
+							</div>
+						</div>
+						<h2 style="color: black; text-align: left; margin:0;">Search:</h2>
 						<div id="accordion"></div>
 					</div>
 				</div></center>
@@ -197,7 +209,7 @@
 						</tbody>
 					</table>
 					<ul class="actions special">
-						<li><a href="#" class="button wide primary">Sign Up</a></li>
+						<li><a href="#" class="button wide primary">Questions?</a></li>
 						<li><a href="#" class="button wide">Learn More</a></li>
 					</ul>
 				</div>
@@ -365,13 +377,6 @@
 			</section>
 
 			<section id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
 				<ul class="copyright">
 					<li>&copy; EarthLab: A Part of CIRIES at the University of Colorado, Boulder</li><li>Design: <a href="www.rerickson.me">R. Erickson</a></li>
 				</ul>
