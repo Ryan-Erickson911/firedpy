@@ -7,29 +7,37 @@
 		<link rel="stylesheet" href="assets/fontawesome/css/solid.css" />
 		<link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
+		<!-- Top Header -->
+		<div id="scrollheader">
+			<header class="col-12">
+				<span><a href="https://earthlab.colorado.edu/"><img src="assets/imgs/earthlab_homepage.png" style="width: 150px;"/></a></span>
+			</header>
+		</div>
 		<!-- Header -->
 			<div id="top"></div>
 			<section id="header">
 				<div class="inner">
-					<span class="icon major fa-solid fa-cloud"></span>
-					<h1><strong>Firedpy</strong> by CU Boulder<br /></h1>
+					<span><img src="assets/imgs/earthlab_logo.png" style="width: 200px;"/></span>
+					<h1><strong>Firedpy</strong> by EarthLab<br /></h1>
 					<p>A MODIS 6 Python CLI for Burn Data and Statistics</p>
 					<ul class="actions special">
-						<li><a href="#one" class="button scrolly">Authors</a></li>
+						<li><a href="#authors" class="button scrolly">Authors</a></li>
 						<li><a href="#two" class="button scrolly">Data</a></li>
 						<li><a href="#four" class="button scrolly">Parameters</a></li>
 						<li><a href="#five" class="button scrolly">Installation</a></li>
 					</ul>
+					<p>EarthLab is part of <strong>CIRES</strong> at the University of Colorado, Boulder<p>
 				</div>
 			</section>
 
 		<!-- One -->
-			<section id="one" class="main style1">
+			<section class="main style1">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-12">
@@ -38,7 +46,7 @@
 							</header>
 							<span class="image fit"><img src="assets/imgs/rim_fire_ca.png" alt="" /></span>
 							<p>This package uses a space-time window to classify individual burn detections from late 2001 to near-present into discrete events and return both a data table and shapefiles of these events.</p>
-							<header class="major">
+							<header id="authors" class="major">
 								<h2>Methodological information for FIREDpy 1.0:</h2>
 							</header>
 							<p>Balch, J. K., St. Denis, L. A., Mahood, A. L., Mietkiewicz, N. P., Williams, T. W., McGlinchy J, and Cook, M. C. 2020. FIRED (Fire Events Delineation): An open, flexible algorithm & database of U.S. fire events derived from the MODIS burned area product (2001-19). Remote Sensing, 12(21), 3498; <a href="https://doi.org/10.3390/rs12213498.">https://doi.org/10.3390/rs12213498.</a></p>
@@ -66,8 +74,13 @@
 						</div>
 					</div>
 				</div>
-                <center><div id="map"></div></center>
-                <script src="assets/js/firedpy_map.js"></script>	
+				<center><div id="map">
+					<div id="sidebar">
+						<h2 style="color: black;">Countries</h2>
+						<div id="accordion"></div>
+					</div>
+				</div></center>
+				<script src="assets/js/firedpy_map.js"></script>	
 			</section>
 
 		<!-- Three -->
@@ -360,7 +373,7 @@
 					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; University of Colorado, Boulder</li><li>Design: <a href="www.rerickson.me">R. Erickson</a></li>
+					<li>&copy; EarthLab: A Part of CIRIES at the University of Colorado, Boulder</li><li>Design: <a href="www.rerickson.me">R. Erickson</a></li>
 				</ul>
 			</section>
 			<a href="#top" class="to-top">↑</a>
