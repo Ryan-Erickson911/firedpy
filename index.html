@@ -17,7 +17,7 @@
 		<div id="top"></div>
 		<div id="scrollheader">
 			<header class="col-12">
-				<span><a href="https://earthlab.colorado.edu/"><img src="assets/imgs/earthlab_homepage.png" style="width: 150px;"/></a></span>
+				<span><a href="https://earthlab.colorado.edu"><img src="assets/imgs/earthlab_homepage.png" style="width: 150px;"/></a></span>
 			</header>
 		</div>
 		<!-- Header -->
@@ -58,6 +58,10 @@
 								<h2>Methodological information for FIREDpy 2.0, description of 2000-2024 datasets:</h2>
 							</header>
 							<p>Coming soon...</a></p>
+							<header class="major">
+								<h2>Data Sharing Agreement</h2>
+							</header>
+							<p>FIREDpy is currently in active development, and newer versions of the algorithm and data products are shared on an individual basis. All data products generated from unpublished versions of FIREDpy require permission from PI Jennifer K. Balch prior to use in publications, presentations, or public dissemination. These conversations ensure appropriate acknowledgment of the development team's contributions and proper context for the algorithm's current capabilities and limitations. Please use the above citation for attributing credit. For data requests or collaboration inquiries, please contact <a href="mailto::nate.hofford@colorado.edu" style="border-bottom: dotted 1px #666;">Nate Hofford</a>, University of Colorado Boulder.</a></p>
 						</div>
 					</div>
 				</div>
@@ -70,7 +74,8 @@
 							<header class="major">
 								<h1 style="margin:0;">Proccessed Countries</h1>
 							</header>
-							<p>Click on your favorite country to view avaliable fire perimeter datasets</p>
+							<p style="margin: 0 0 0.5em 0;">Already-created products are displayed below. They are housed in the CU Scholar data repository in the <a href="https://scholar.colorado.edu/collections/pz50gx05h" style="border-bottom: dotted 1px #666;">Earth Lab Data collection</a>, or <a href="https://scholar.colorado.edu/catalog?f%5Bacademic_affiliation_sim%5D%5B%5D=Earth+Lab&locale=en" style="border-bottom: dotted 1px #666;">here</a>.
+								All of the created products have an event-level shapefile in .gpkg and .shp formats. Most countries also have the daily-level shapefile for the V2024 products, but for the V2022 products these were not created for most countries in Africa and Asia due to computational restrictions.<br><br>Click on your favorite country to view avaliable fire perimeter datasets:</p>
 						</div>
 					</div>
 				</div>
@@ -88,7 +93,7 @@
 								<span class="square sq3"></span>FIREDpy 2.0 V2024VST<br>(variable ST)
 							</div>
 						</div>
-						<h2 style="color: black; text-align: left; margin:0;">Search:</h2>
+						<input id="searchBox" type="text" placeholder="Search for a country..." style="width:100%; padding:6px; margin-bottom:8px; height:30px;">
 						<div id="accordion"></div>
 					</div>
 				</div></center>
@@ -97,7 +102,7 @@
 
 		<!-- Three -->
 			<section id="three" class="main style1 special">
-				<div class="container">
+				<div class="container" style="text-align: left;">
 					<header class="major">
 						<h1>Run your own analysis!</h1>
 					</header>
@@ -107,8 +112,8 @@
 					<header>
 						<h1>The MODIS Sinusioidal Project</h1>
 					</header>
+					<p>You may specify study areas for FIREDpy using individual MODIS tiles. This product uses a Sinusoidal, Lambert Azimuthal Equal-Area projection. There are several spatial resolutions available for this data, but FIREDpy uses the 500m resolution (actual distances depend on location). For more information about this projection, click <a href="https://modis-land.gsfc.nasa.gov/MODLAND_grid.html" style="border-bottom: dotted 1px #666;">here</a>. If you would like to use the MODIS sinusoidal grid IDs to identify FIREDpy study areas, see the visualization of this grid below.</p>
 					<span><img width="105%" alt="image" src="assets/imgs/modis_land_id_map_robinson.png" /></span>
-					</ul>
 				</div>
 			</section>
 
@@ -116,7 +121,7 @@
 			<section id="four" class="main style2 special">
 				<div class="container">
 					<header class="major">
-						<h2>Avaliable Parameters</h2>
+						<h2 >Avaliable Parameters</h2>
 					</header>
 					<table>
 						<thead>
@@ -201,23 +206,41 @@
 								<td>Gets the HDF4 files from the MODIS tiles starting in this year. Earliest available is 2001</td>
 							</tr>
 							<tr>
-								<td>--end_year</td>
+								<td>--end_year, -y2</td>
 								<td>integer</td>
 								<td>-y2 2021</td>
 								<td>Gets the HDF4 files from the MODIS tiles ending in this year. Latest available is 2021</td>
 							</tr>
 						</tbody>
 					</table>
+					<header class="major" style="text-align: left;">
+						<h2>Boundary files are available for use as areas of interest</h2>
+					</header>
+					<p style="text-align: left;">
+						For example, using the -sf option to select fire data for Colorado, USA.: <pre><code style="background:#444">firedpy -sf ~/firedpy/firedpy/data/us_states/colorado.gpkg</code></pre></p>
+					<p>
+						<ul style="text-align: left;">
+							<li>Country boundaries are in data/individual_countries<br></li>
+							<li>Continent boundaries are in data/continents<br></li>
+							<li>United States state boundaries for the United States of America are in dat/us_states<br></li>
+							<li>Australian state boundaries are in data/australian_states<br></li>
+							<li>If using the ineractive option, when prompted for the name of the country, spaces will be replaced with spaces and case does not matter.</li>
+						</ul>
+					</p>
+					<header class="major" style="text-align: left;">
+						<h2>Have you used FIREDpy?</h2>
+					</header>
+					<p style="text-align: left;">The algorithm and derived data products are under active development. Please raise an issue with any suggestions to help us improve firedpy. Or just email Adam and he will be overjoyed to talk about firedpy. If you'd like to contribute, check out the GitHub</p>
 					<ul class="actions special">
-						<li><a href="#" class="button wide primary">Questions?</a></li>
-						<li><a href="#" class="button wide">Learn More</a></li>
+						<li><a href="mailto::admahood@duck.com" class="button wide primary">Contact</a></li>
+						<li><a href="https://github.com/earthlab/firedpy" class="button wide">Contribute</a></li>
 					</ul>
 				</div>
 			</section>
 
 			<section id="five" class="main style1">
 				<div class="container">
-					<header class="major special">
+					<header class="major special" style="text-align: left;">
 						<h2>Installation</h2>
 					</header>
 
