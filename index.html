@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
 		<!-- Top Header -->
 		<div id="top"></div>
 		<div id="scrollheader">
@@ -21,398 +20,356 @@
 			</header>
 		</div>
 		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<span><img src="assets/imgs/earthlab_logo.png" style="width: 200px;"/></span>
-					<h1><strong>Firedpy</strong> by EarthLab<br /></h1>
-					<p>A MODIS 6 Python CLI for Burn Data and Statistics</p>
-					<ul class="actions special">
-						<li><a href="#authors" class="button scrolly">Authors</a></li>
-						<li><a href="#two" class="button scrolly">Data</a></li>
-						<li><a href="#four" class="button scrolly">Parameters</a></li>
-						<li><a href="#five" class="button scrolly">Installation</a></li>
-					</ul>
-					<p>EarthLab is part of <strong>CIRES</strong> at the University of Colorado, Boulder<p>
-				</div>
-			</section>
-
-		<!-- One -->
-			<section class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-12">
-							<header class="major">
-								<h2>A Python Command-Line Interface for classifying fire events from the Collection 6 MODIS Burned Area Product.</h2>
-							</header>
-							<span class="image fit"><img src="assets/imgs/rim_fire_ca.png" alt="" /></span>
-							<p id="authors">This package uses a space-time window to classify individual burn detections from late 2001 to near-present into discrete events and return both a data table and shapefiles of these events.</p>
-							<header class="major">
-								<h2>Methodological information for FIREDpy 1.0:</h2>
-							</header>
-							<p>Balch, J. K., St. Denis, L. A., Mahood, A. L., Mietkiewicz, N. P., Williams, T. W., McGlinchy J, and Cook, M. C. 2020. FIRED (Fire Events Delineation): An open, flexible algorithm & database of U.S. fire events derived from the MODIS burned area product (2001-19). Remote Sensing, 12(21), 3498; <a href="https://doi.org/10.3390/rs12213498.">https://doi.org/10.3390/rs12213498.</a></p>
-							<header class="major">
-								<h2>Description of the 2000 - 2021 data sets:</h2>
-							</header>
-							<p>Mahood, A.L. Lindrooth, E.J., Cook, M.C. and Balch, J.K. 2022. Country-level fire perimeter datasets (2001-2021). Nature Scientific Data, 9(458). <a href="https://doi.org/10.1038/s41597-022-01572-3">https://doi.org/10.1038/s41597-022-01572-3</a></p>
-							<header class="major">
-								<h2>Methodological information for FIREDpy 2.0, description of 2000-2024 datasets:</h2>
-							</header>
-							<p>Coming soon...</a></p>
-							<header class="major">
-								<h2>Data Sharing Agreement</h2>
-							</header>
-							<p>FIREDpy is currently in active development, and newer versions of the algorithm and data products are shared on an individual basis. All data products generated from unpublished versions of FIREDpy require permission from PI Jennifer K. Balch prior to use in publications, presentations, or public dissemination. These conversations ensure appropriate acknowledgment of the development team's contributions and proper context for the algorithm's current capabilities and limitations. Please use the above citation for attributing credit. For data requests or collaboration inquiries, please contact <a href="mailto::nate.hofford@colorado.edu" style="border-bottom: dotted 1px #666;">Nate Hofford</a>, University of Colorado Boulder.</a></p>
-						</div>
-					</div>
-				</div>
-			</section>
-		<!-- Two -->
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-12">
-							<header class="major">
-								<h1 style="margin:0;">Proccessed Countries</h1>
-							</header>
-							<p style="margin: 0 0 0.5em 0;">Already-created products are displayed below. They are housed in the CU Scholar data repository in the <a href="https://scholar.colorado.edu/collections/pz50gx05h" style="border-bottom: dotted 1px #666;">Earth Lab Data collection</a>, or <a href="https://scholar.colorado.edu/catalog?f%5Bacademic_affiliation_sim%5D%5B%5D=Earth+Lab&locale=en" style="border-bottom: dotted 1px #666;">here</a>.
-								All of the created products have an event-level shapefile in .gpkg and .shp formats. Most countries also have the daily-level shapefile for the V2024 products, but for the V2022 products these were not created for most countries in Africa and Asia due to computational restrictions.<br><br>Click on your favorite country to view avaliable fire perimeter datasets:</p>
-						</div>
-					</div>
-				</div>
-				<center><div id="map">
-					<div id="sidebar">
-						<h2 style="color: black; text-align: center; margin:0;">Avaliable Datasets</h2>
-						<div class="legend">
-							<div class="legend-item">
-								<span class="square sq1"></span>FIREDpy 1.0 V2022<br>(variable ST) 
-							</div>
-							<div class="legend-item">
-								<span class="square sq2"></span>FIREDpy 2.0 V2024S1T5<br>(-sp = 1 pixel, -tp = 5 days)
-							</div>
-							<div class="legend-item">
-								<span class="square sq3"></span>FIREDpy 2.0 V2024VST<br>(variable ST)
-							</div>
-						</div>
-						<input id="searchBox" type="text" placeholder="Search for a country..." style="width:100%; padding:6px; margin-bottom:8px; height:30px;">
-						<div id="accordion"></div>
-					</div>
-				</div></center>
-				<script src="assets/js/firedpy_map.js"></script>	
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="main style1 special">
-				<div class="container" style="text-align: left;">
-					<header class="major">
-						<h1>Run your own analysis!</h1>
-					</header>
-					<p>The user is able to specify the spatial and temporal parameters of the window, as well as the spatial and temporal extent, using either a shapefile or a list of MODIS Sinusoidal Projection tile IDs. Countries, continents and US states are included. Any area from the world may be selected. </p>
-					<p>However, in the current version, memory constraints may limit the extent available for a single model run. Equatorial regions have much more fire activity, and may require much more RAM to process than a normal laptop will have.</p>
-					<p>The algorithm outputs shapefiles of delineated fire events in either .shp or .gpkg format. In addition to the full event polygons created by default, and the user has the option of having firedpy produce daily-level perimeters, providing a representation of both final and expanding event perimeters.</p>
-					<header>
-						<h1>The MODIS Sinusioidal Project</h1>
-					</header>
-					<p>You may specify study areas for FIREDpy using individual MODIS tiles. This product uses a Sinusoidal, Lambert Azimuthal Equal-Area projection. There are several spatial resolutions available for this data, but FIREDpy uses the 500m resolution (actual distances depend on location). For more information about this projection, click <a href="https://modis-land.gsfc.nasa.gov/MODLAND_grid.html" style="border-bottom: dotted 1px #666;">here</a>. If you would like to use the MODIS sinusoidal grid IDs to identify FIREDpy study areas, see the visualization of this grid below.</p>
-					<span><img width="105%" alt="image" src="assets/imgs/modis_land_id_map_robinson.png" /></span>
-				</div>
-			</section>
-
-		<!-- Four -->
-			<section id="four" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h2 >Avaliable Parameters</h2>
-					</header>
-					<table>
-						<thead>
-							<tr>
-								<th>parameter</th>
-								<th>value(s)</th>
-								<th>example</th>
-								<th>description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>--spatial_param, -sp</td>
-								<td>integer</td>
-								<td>-sp 5</td>
-								<td>Pixel radius for moving window, defaults to 5</td>
-							</tr>
-							<tr>
-								<td>--temporal_param, -tp</td>
-								<td>integer</td>
-								<td>-tp 11</td>
-								<td>Day radius for moving window, defaults to 11</td>
-							</tr>
-							<tr>
-								<td>--tiles, -t</td>
-								<td>character (MODIS tile)</td>
-								<td>-t h11v09</td>
-								<td>Which MODIS tiles should be used</td>
-							</tr>
-							<tr>
-								<td>--shape_file, -sf</td>
-								<td>character (shapefile)</td>
-								<td>-sf ~/firedpy/data/individual_countries/canada.gpkg</td>
-								<td>Finds MODIS tiles to download based on the polygon and clips output by the shapefile boundaries</td>
-							</tr>
-							<tr>
-								<td>--project_directory, -p</td>
-								<td>character</td>
-								<td>-p /home/firedpy/proj</td>
-								<td>Sets the output directory. Will also download all input data to this path</td>
-							</tr>
-							<tr>
-								<td>--eco_region_type, -et</td>
-								<td>character</td>
-								<td>-et na</td>
-								<td>Type of ecoregion, either 'world' or 'na'</td>
-							</tr>
-							<tr>
-								<td>--eco_region_level, -el</td>
-								<td>integer</td>
-								<td>-el 3</td>
-								<td>If ecoregion type = na, the level (1-3) of North American ecoregions</td>
-							</tr>
-							<tr>
-								<td>--land_cover_type, -lt</td>
-								<td>integer and character</td>
-								<td>-lt 2</td>
-								<td>Number (1-3) corresponding with a MODIS/Terra+Aqua Land Cover (MCD12Q1) category. Requires an Earthdata account</td>
-							</tr>
-							<tr>
-								<td>--shape_type, -st</td>
-								<td>character</td>
-								<td>-st gpkg</td>
-								<td>Option to build a shapefile for the fired event as a GeoPackage (gpkg), ESRI shapefile (shp), or both</td>
-							</tr>
-							<tr>
-								<td>--project_name, -n</td>
-								<td>character</td>
-								<td>-n fired_colorado</td>
-								<td>Specifies a base name for output files for the tables and shapefile outputs</td>
-							</tr>
-							<tr>
-								<td>--daily, -d</td>
-								<td>character (yes or no)</td>
-								<td>-d</td>
-								<td>Creates daily polygons; if not provided, only event-level perimeters will be created</td>
-							</tr>
-							<tr>
-								<td>--start_year, -y1</td>
-								<td>integer</td>
-								<td>-y1 2001</td>
-								<td>Gets the HDF4 files from the MODIS tiles starting in this year. Earliest available is 2001</td>
-							</tr>
-							<tr>
-								<td>--end_year, -y2</td>
-								<td>integer</td>
-								<td>-y2 2021</td>
-								<td>Gets the HDF4 files from the MODIS tiles ending in this year. Latest available is 2021</td>
-							</tr>
-						</tbody>
-					</table>
-					<header class="major" style="text-align: left;">
-						<h2>Boundary files are available for use as areas of interest</h2>
-					</header>
-					<p style="text-align: left;">
-						For example, using the -sf option to select fire data for Colorado, USA.: <pre><code style="background:#444">firedpy -sf ~/firedpy/firedpy/data/us_states/colorado.gpkg</code></pre></p>
-					<p>
-						<ul style="text-align: left;">
-							<li>Country boundaries are in data/individual_countries<br></li>
-							<li>Continent boundaries are in data/continents<br></li>
-							<li>United States state boundaries for the United States of America are in dat/us_states<br></li>
-							<li>Australian state boundaries are in data/australian_states<br></li>
-							<li>If using the ineractive option, when prompted for the name of the country, spaces will be replaced with spaces and case does not matter.</li>
-						</ul>
-					</p>
-					<header class="major" style="text-align: left;">
-						<h2>Have you used FIREDpy?</h2>
-					</header>
-					<p style="text-align: left;">The algorithm and derived data products are under active development. Please raise an issue with any suggestions to help us improve firedpy. Or just email Adam and he will be overjoyed to talk about firedpy. If you'd like to contribute, check out the GitHub</p>
-					<ul class="actions special">
-						<li><a href="mailto::admahood@duck.com" class="button wide primary">Contact</a></li>
-						<li><a href="https://github.com/earthlab/firedpy" class="button wide">Contribute</a></li>
-					</ul>
-				</div>
-			</section>
-
-			<section id="five" class="main style1">
-				<div class="container">
-					<header class="major special" style="text-align: left;">
-						<h2>Installation</h2>
-					</header>
-
-					<p>There are two main ways to install firedpy. Method 1 is to install locally from source and method 2 is to run it out of a Docker container.</p>
-
-					<h3>Method 1 - Install from source</h3>
-
-					<h4>1.1 Package Installer for Python (pip)</h4>
-
-					<ul>
-						<li><strong>Step #1:</strong> Install the Geospatial Data Abstraction Library (GDAL). Installation depends on your OS.</li>
-					</ul>
-
-					<p><strong>macOS (brew)</strong></p>
-					<pre><code>brew install gdal</code></pre>
-
-					<p><strong>Linux (Debian/Ubuntu)</strong></p>
-					<pre><code>sudo apt update</code></pre>
-					<pre><code>sudo apt install gdal-bin libgdal-dev python3-gdal</code></pre>
-
-					<p><strong>Linux (Fedora/RHEL/CentOS/Rocky)</strong></p>
-					<pre><code>sudo dnf install gdal gdal-devel python3-gdal</code></pre>
-
-					<p><strong>Linux (Arch)</strong></p>
-					<pre><code>sudo pacman -Syu</code></pre>
-					<pre><code>sudo pacman -S gdal python-gdal</code></pre>
-
-					<p><strong>Windows</strong><br>
-					Recommended: install GDAL via Conda. Alternatively, use the OSGeo4W installer.</p>
-
-					<ul>
-						<li><strong>Step #2:</strong> Create and activate a Python environment.</li>
-					</ul>
-
-					<p><strong>macOS or Linux</strong></p>
-					<pre><code>mkdir ~/envs</code></pre>
-					<pre><code>python3 -m venv ~/envs/firedpy</code></pre>
-					<pre><code>source ~/envs/firedpy/bin/activate</code></pre>
-
-					<p><strong>Windows (CMD)</strong></p>
-					<pre><code>mkdir ~/envs</code></pre>
-					<pre><code>python3 -m venv ~/envs/firedpy</code></pre>
-					<pre><code>~/envs/firedpy/Scripts/activate.bat</code></pre>
-
-					<ul>
-						<li><strong>Step #3:</strong> Install FIREDpy from source.</li>
-					</ul>
-
-					<pre><code>git clone https://github.com/earthlab/firedpy.git</code></pre>
-					<pre><code>cd firedpy</code></pre>
-					<pre><code>pip install .</code></pre>
-
-					<h4>1.2 Conda</h4>
-
-					<p>Anaconda and its package manager <code>conda</code> work on macOS, Linux, and Windows.</p>
-
-					<ul>
-						<li><strong>Step #1:</strong> Install Anaconda or Miniconda.</li>
-					</ul>
-
-					<ul>
-						<li><strong>Step #2:</strong> Clone the repository.</li>
-					</ul>
-
-					<pre><code>git clone https://github.com/earthlab/firedpy.git</code></pre>
-					<pre><code>cd firedpy</code></pre>
-
-					<ul>
-						<li><strong>Step #3:</strong> Create the environment.</li>
-					</ul>
-
-					<pre><code>conda env create -f environment.yml</code></pre>
-					<pre><code>conda activate firedpy</code></pre>
-
-					<p><em>Optional explicit environment path:</em></p>
-
-					<pre><code>conda env create -f environment.yml --prefix /path/to/firedenv</code></pre>
-					<pre><code>conda activate /path/to/firedenv</code></pre>
-
-					<ul>
-						<li><strong>Step #4:</strong> Install FIREDpy.</li>
-					</ul>
-
-					<pre><code>pip install .</code></pre>
-
-					<h3>Method 2 - Run from a Docker Container</h3>
-
-					<h4>2.1 Get the Docker container running</h4>
-
-					<p>The container name changed from <code>earthlab/firedpy</code> to <code>earthlabcu/firedpy</code>.</p>
-
-					<pre><code>docker run -d -p 127.0.0.1:0:7681 earthlabcu/firedpy:latest</code></pre>
-
-					<p>Check running containers:</p>
-					<pre><code>docker ps</code></pre>
-
-					<p>Enter the container:</p>
-					<pre><code>docker exec -it &lt;container_name&gt; /bin/bash</code></pre>
-
-					<p>Example output:</p>
-
-					<table>
-						<thead>
-							<tr>
-								<th>CONTAINER ID</th>
-								<th>IMAGE</th>
-								<th>COMMAND</th>
-								<th>CREATED</th>
-								<th>STATUS</th>
-								<th>PORTS</th>
-								<th>NAMES</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>58a8a6ed926a</td>
-								<td>earthlabcu/firedpy:latest</td>
-								<td>"/bin/entry.sh ttyd …"</td>
-								<td>2 minutes ago</td>
-								<td>Up 2 minutes</td>
-								<td>127.0.0.1:32768→7681/tcp</td>
-								<td>stupefied_hypatia</td>
-							</tr>
-						</tbody>
-					</table>
-
-					<h4>2.2 Copy firedpy outputs to your local machine</h4>
-
-					<p>Exit the container:</p>
-					<pre><code>exit</code></pre>
-
-					<p>Copy files out:</p>
-					<pre><code>docker cp unruffled_clarke:/home/firedpy/proj/outputs/shapefiles/fired_events_s5_t11_2020153.gpkg /home/Documents/</code></pre>
-
-					<h3>Use</h3>
-
-					<p>Create a <code>.netrc</code> file to avoid repeated authentication:</p>
-					<p><a href="https://nsidc.org/data/user-resources/help-center/creating-netrc-file-earthdata-login">Earthdata .netrc instructions</a></p>
-
-					<p>Run the CLI:</p>
-					<pre><code>firedpy --help</code></pre>
-
-					<p>Example run:</p>
-					<pre><code>firedpy --project_directory ~/scratch/firedpy_finland --country Finland</code></pre>
-
-					<p>Interactive mode:</p>
-					<pre><code>firedpy -i</code></pre>
-
-					<p>More examples:</p>
-					<pre><code>firedpy -p ~/scratch/firedpy_finland --country Finland --spatial_param 6 --temporal_param 10</code></pre>
-					<pre><code>firedpy -p ~/scratch/firedpy_nw_brazil --tiles "h11v09 h12v09" -sp 6 -tp 10</code></pre>
-					<pre><code>firedpy -p ~/scratch/firedpy_nw_brazil -t "h11v09 h12v09" -sp 6 -tp 10 --start_year 2020 --end_year 2024</code></pre>
-					<pre><code>firedpy -p ~/scratch/firedpy_nw_brazil -t "h11v09 h12v09" -sp 6 -tp 10 -y1 2020 -y2 2024 --eco_region_type 3</code></pre>
-					<pre><code>firedpy -p ~/scratch/firedpy_nw_brazil -t "h11v09 h12v09" -sp 6 -tp 10 -y1 2020 -y2 2024 --et 3 --land_cover_type 4 --daily</code></pre>
-
-				</div>
-			</section>
-
-			<section id="footer">
-				<ul class="copyright">
-					<li>&copy; EarthLab: A Part of CIRIES at the University of Colorado, Boulder</li><li>Design: <a href="www.rerickson.me">R. Erickson</a></li>
+		<section id="header">
+			<div class="inner">
+				<span><img src="assets/imgs/earthlab_logo.png" style="width: 200px;"/></span>
+				<h1><strong>Firedpy</strong> by EarthLab<br /></h1>
+				<p>A MODIS 6 Python CLI for Burn Data and Statistics</p>
+				<ul class="actions special">
+					<li><a href="#authors" class="button scrolly">Authors</a></li>
+					<li><a href="#two" class="button scrolly">Data</a></li>
+					<li><a href="#four" class="button scrolly">Parameters</a></li>
+					<li><a href="#five" class="button scrolly">Installation</a></li>
 				</ul>
-			</section>
-			<a href="#top" class="to-top">↑</a>
+				<p>EarthLab is part of <strong>CIRES</strong> at the University of Colorado, Boulder<p>
+			</div>
+		</section>
+		<!-- One -->
+		<section class="main style1">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-12">
+						<header class="major">
+							<h2>A Python Command-Line Interface for classifying fire events from the Collection 6 MODIS Burned Area Product.</h2>
+						</header>
+						<span class="image fit"><img src="assets/imgs/rim_fire_ca.png" alt="" /></span>
+						<p id="authors">This package uses a space-time window to classify individual burn detections from late 2001 to near-present into discrete events and return both a data table and shapefiles of these events.</p>
+						<header class="major">
+							<h2>Methodological information for FIREDpy 1.0:</h2>
+						</header>
+						<p>Balch, J. K., St. Denis, L. A., Mahood, A. L., Mietkiewicz, N. P., Williams, T. W., McGlinchy J, and Cook, M. C. 2020. FIRED (Fire Events Delineation): An open, flexible algorithm & database of U.S. fire events derived from the MODIS burned area product (2001-19). Remote Sensing, 12(21), 3498; <a href="https://doi.org/10.3390/rs12213498.">https://doi.org/10.3390/rs12213498.</a></p>
+						<header class="major">
+							<h2>Description of the 2000 - 2021 data sets:</h2>
+						</header>
+						<p>Mahood, A.L. Lindrooth, E.J., Cook, M.C. and Balch, J.K. 2022. Country-level fire perimeter datasets (2001-2021). Nature Scientific Data, 9(458). <a href="https://doi.org/10.1038/s41597-022-01572-3">https://doi.org/10.1038/s41597-022-01572-3</a></p>
+						<header class="major">
+							<h2>Methodological information for FIREDpy 2.0, description of 2000-2024 datasets:</h2>
+						</header>
+						<p>Coming soon...</p>
+						<header class="major">
+							<h2>Data Sharing Agreement</h2>
+						</header>
+						<p>FIREDpy is currently in active development, and newer versions of the algorithm and data products are shared on an individual basis. All data products generated from unpublished versions of FIREDpy require permission from PI Jennifer K. Balch prior to use in publications, presentations, or public dissemination. These conversations ensure appropriate acknowledgment of the development team's contributions and proper context for the algorithm's current capabilities and limitations. Please use the above citation for attributing credit. For data requests or collaboration inquiries, please contact <a href="mailto::nate.hofford@colorado.edu" style="border-bottom: dotted 1px #666;">Nate Hofford</a>, University of Colorado Boulder.</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Two -->
+		<section id="two" class="main style2">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-12">
+						<header class="major">
+							<h1 style="margin:0;">Proccessed Countries</h1>
+						</header>
+						<p style="margin: 0 0 0.5em 0;">Already-created products are displayed below. They are housed in the CU Scholar data repository in the <a href="https://scholar.colorado.edu/collections/pz50gx05h" style="border-bottom: dotted 1px #666;">Earth Lab Data collection</a>, or <a href="https://scholar.colorado.edu/catalog?f%5Bacademic_affiliation_sim%5D%5B%5D=Earth+Lab&locale=en" style="border-bottom: dotted 1px #666;">here</a>.
+							All of the created products have an event-level shapefile in .gpkg and .shp formats. Most countries also have the daily-level shapefile for the V2024 products, but for the V2022 products these were not created for most countries in Africa and Asia due to computational restrictions.<br><br>Click on, or search for, your favorite country to view avaliable fire perimeter datasets:</p>
+					</div>
+				</div>
+			</div>
+			<center><div id="map">
+				<div id="sidebar" style="color: black" >
+					<h2 style="color: black; text-align: center; margin:0;">Avaliable Datasets</h2>
+					<div class="legend">
+						<div class="legend-item">
+							<span class="square sq1"></span>1
+						</div>
+						<div class="legend-item">
+							<span class="square sq2"></span>2
+						</div>
+						<div class="legend-item">
+							<span class="square sq3"></span>3
+						</div>
+						<div class="legend-item">
+							<span class="square sq4"></span>4+
+						</div>
+					</div>
+					<input id="searchBox" type="text" placeholder="Search for a country..." style="width:100%; padding:6px; margin-bottom:8px; height:30px;">
+					<select id="regionSelect"></select>
+					<select id="subregionSelect"></select>
+					<select id="countrySelect"></select>
+					<div id="datasetSelect"></div>
+				</div>
+			</div></center>
+			<script src="assets/js/firedpy_map.js"></script>	
+		</section>
+		<!-- Three -->
+		<section id="three" class="main style1 special">
+			<div class="container" style="text-align: left;">
+				<header class="major">
+					<h1>Run your own analysis!</h1>
+				</header>
+				<p>The user is able to specify the spatial and temporal parameters of the window, as well as the spatial and temporal extent, using either a shapefile or a list of MODIS Sinusoidal Projection tile IDs. Countries, continents and US states are included. Any area from the world may be selected. </p>
+				<p>However, in the current version, memory constraints may limit the extent available for a single model run. Equatorial regions have much more fire activity, and may require much more RAM to process than a normal laptop will have.</p>
+				<p>The algorithm outputs shapefiles of delineated fire events in either .shp or .gpkg format. In addition to the full event polygons created by default, and the user has the option of having firedpy produce daily-level perimeters, providing a representation of both final and expanding event perimeters.</p>
+				<header>
+					<h1>The MODIS Sinusioidal Project</h1>
+				</header>
+				<p>You may specify study areas for FIREDpy using individual MODIS tiles. This product uses a Sinusoidal, Lambert Azimuthal Equal-Area projection. There are several spatial resolutions available for this data, but FIREDpy uses the 500m resolution (actual distances depend on location). For more information about this projection, click <a href="https://modis-land.gsfc.nasa.gov/MODLAND_grid.html" style="border-bottom: dotted 1px #666;">here</a>. If you would like to use the MODIS sinusoidal grid IDs to identify FIREDpy study areas, see the visualization of this grid below.</p>
+				<span><img width="105%" alt="image" src="assets/imgs/modis_land_id_map_robinson.png" /></span>
+			</div>
+		</section>
+		<!-- Four -->
+		<section id="four" class="main style2 special">
+			<div class="container">
+				<header class="major">
+					<h2 >Avaliable Parameters</h2>
+				</header>
+				<table>
+					<thead>
+						<tr>
+							<th>parameter</th>
+							<th>value(s)</th>
+							<th>example</th>
+							<th>description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>--spatial_param, -sp</td>
+							<td>integer</td>
+							<td>-sp 5</td>
+							<td>Pixel radius for moving window, defaults to 5</td>
+						</tr>
+						<tr>
+							<td>--temporal_param, -tp</td>
+							<td>integer</td>
+							<td>-tp 11</td>
+							<td>Day radius for moving window, defaults to 11</td>
+						</tr>
+						<tr>
+							<td>--tiles, -t</td>
+							<td>character (MODIS tile)</td>
+							<td>-t h11v09</td>
+							<td>Which MODIS tiles should be used</td>
+						</tr>
+						<tr>
+							<td>--shape_file, -sf</td>
+							<td>character (shapefile)</td>
+							<td>-sf ~/firedpy/data/individual_countries/canada.gpkg</td>
+							<td>Finds MODIS tiles to download based on the polygon and clips output by the shapefile boundaries</td>
+						</tr>
+						<tr>
+							<td>--project_directory, -p</td>
+							<td>character</td>
+							<td>-p /home/firedpy/proj</td>
+							<td>Sets the output directory. Will also download all input data to this path</td>
+						</tr>
+						<tr>
+							<td>--eco_region_type, -et</td>
+							<td>character</td>
+							<td>-et na</td>
+							<td>Type of ecoregion, either 'world' or 'na'</td>
+						</tr>
+						<tr>
+							<td>--eco_region_level, -el</td>
+							<td>integer</td>
+							<td>-el 3</td>
+							<td>If ecoregion type = na, the level (1-3) of North American ecoregions</td>
+						</tr>
+						<tr>
+							<td>--land_cover_type, -lt</td>
+							<td>integer and character</td>
+							<td>-lt 2</td>
+							<td>Number (1-3) corresponding with a MODIS/Terra+Aqua Land Cover (MCD12Q1) category. Requires an Earthdata account</td>
+						</tr>
+						<tr>
+							<td>--shape_type, -st</td>
+							<td>character</td>
+							<td>-st gpkg</td>
+							<td>Option to build a shapefile for the fired event as a GeoPackage (gpkg), ESRI shapefile (shp), or both</td>
+						</tr>
+						<tr>
+							<td>--project_name, -n</td>
+							<td>character</td>
+							<td>-n fired_colorado</td>
+							<td>Specifies a base name for output files for the tables and shapefile outputs</td>
+						</tr>
+						<tr>
+							<td>--daily, -d</td>
+							<td>character (yes or no)</td>
+							<td>-d</td>
+							<td>Creates daily polygons; if not provided, only event-level perimeters will be created</td>
+						</tr>
+						<tr>
+							<td>--start_year, -y1</td>
+							<td>integer</td>
+							<td>-y1 2001</td>
+							<td>Gets the HDF4 files from the MODIS tiles starting in this year. Earliest available is 2001</td>
+						</tr>
+						<tr>
+							<td>--end_year, -y2</td>
+							<td>integer</td>
+							<td>-y2 2021</td>
+							<td>Gets the HDF4 files from the MODIS tiles ending in this year. Latest available is 2021</td>
+						</tr>
+					</tbody>
+				</table>
+				<header class="major" style="text-align: left;">
+					<h2>Boundary files are available for use as areas of interest</h2>
+				</header>
+				<p style="text-align: left;">
+					For example, using the -sf option to select fire data for Colorado, USA.: <pre><code style="background:#444">firedpy -sf ~/firedpy/firedpy/data/us_states/colorado.gpkg</code></pre></p>
+				<p>
+					<ul style="text-align: left;">
+						<li>Country boundaries are in data/individual_countries<br></li>
+						<li>Continent boundaries are in data/continents<br></li>
+						<li>United States state boundaries for the United States of America are in dat/us_states<br></li>
+						<li>Australian state boundaries are in data/australian_states<br></li>
+						<li>If using the ineractive option, when prompted for the name of the country, spaces will be replaced with spaces and case does not matter.</li>
+					</ul>
+				</p>
+				<header class="major" style="text-align: left;">
+					<h2>Have you used FIREDpy?</h2>
+				</header>
+				<p style="text-align: left;">The algorithm and derived data products are under active development. Please raise an issue with any suggestions to help us improve firedpy. Or just email Adam and he will be overjoyed to talk about firedpy. If you'd like to contribute, check out the GitHub</p>
+				<ul class="actions special">
+					<li><a href="mailto::admahood@duck.com" class="button wide primary">Contact</a></li>
+					<li><a href="https://github.com/earthlab/firedpy" class="button wide">Contribute</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- Five -->
+		<section id="five" class="main style1">
+			<div class="container">
+				<header class="major special" style="text-align: left;">
+					<h2>Installation</h2>
+				</header>
+				<p>There are two main ways to install firedpy. Method 1 is to install locally from source and method 2 is to run it out of a Docker container.</p>
+				<h3>Method 1 - Install from source</h3>
+				<h4>1.1 Package Installer for Python (pip)</h4>
+				<ul>
+					<li><strong>Step #1:</strong> Install the Geospatial Data Abstraction Library (GDAL). Installation depends on your OS.</li>
+				</ul>
+				<p><strong>macOS (brew)</strong></p>
+				<pre><code>brew install gdal</code></pre>
+				<p><strong>Linux (Debian/Ubuntu)</strong></p>
+				<pre><code>sudo apt update</code></pre>
+				<pre><code>sudo apt install gdal-bin libgdal-dev python3-gdal</code></pre>
+				<p><strong>Linux (Fedora/RHEL/CentOS/Rocky)</strong></p>
+				<pre><code>sudo dnf install gdal gdal-devel python3-gdal</code></pre>
+				<p><strong>Linux (Arch)</strong></p>
+				<pre><code>sudo pacman -Syu</code></pre>
+				<pre><code>sudo pacman -S gdal python-gdal</code></pre>
+				<p><strong>Windows</strong><br>
+				Recommended: install GDAL via Conda. Alternatively, use the OSGeo4W installer.</p>
+				<ul>
+					<li><strong>Step #2:</strong> Create and activate a Python environment.</li>
+				</ul>
+				<p><strong>macOS or Linux</strong></p>
+				<pre><code>mkdir ~/envs</code></pre>
+				<pre><code>python3 -m venv ~/envs/firedpy</code></pre>
+				<pre><code>source ~/envs/firedpy/bin/activate</code></pre>
+				<p><strong>Windows (CMD)</strong></p>
+				<pre><code>mkdir ~/envs</code></pre>
+				<pre><code>python3 -m venv ~/envs/firedpy</code></pre>
+				<pre><code>~/envs/firedpy/Scripts/activate.bat</code></pre>
+				<ul>
+					<li><strong>Step #3:</strong> Install FIREDpy from source.</li>
+				</ul>
+				<pre><code>git clone https://github.com/earthlab/firedpy.git</code></pre>
+				<pre><code>cd firedpy</code></pre>
+				<pre><code>pip install .</code></pre>
+				<h4>1.2 Conda</h4>
+				<p>Anaconda and its package manager <code>conda</code> work on macOS, Linux, and Windows.</p>
+				<ul>
+					<li><strong>Step #1:</strong> Install Anaconda or Miniconda.</li>
+				</ul>
+				<ul>
+					<li><strong>Step #2:</strong> Clone the repository.</li>
+				</ul>
+				<pre><code>git clone https://github.com/earthlab/firedpy.git</code></pre>
+				<pre><code>cd firedpy</code></pre>
+				<ul>
+					<li><strong>Step #3:</strong> Create the environment.</li>
+				</ul>
+				<pre><code>conda env create -f environment.yml</code></pre>
+				<pre><code>conda activate firedpy</code></pre>
+				<p><em>Optional explicit environment path:</em></p>
+				<pre><code>conda env create -f environment.yml --prefix /path/to/firedenv</code></pre>
+				<pre><code>conda activate /path/to/firedenv</code></pre>
+				<ul>
+					<li><strong>Step #4:</strong> Install FIREDpy.</li>
+				</ul>
+				<pre><code>pip install .</code></pre>
+				<h3>Method 2 - Run from a Docker Container</h3>
+				<h4>2.1 Get the Docker container running</h4>
+				<p>The container name changed from <code>earthlab/firedpy</code> to <code>earthlabcu/firedpy</code>.</p>
+				<pre><code>docker run -d -p 127.0.0.1:0:7681 earthlabcu/firedpy:latest</code></pre>
+				<p>Check running containers:</p>
+				<pre><code>docker ps</code></pre>
+				<p>Enter the container:</p>
+				<pre><code>docker exec -it &lt;container_name&gt; /bin/bash</code></pre>
+				<p>Example output:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>CONTAINER ID</th>
+							<th>IMAGE</th>
+							<th>COMMAND</th>
+							<th>CREATED</th>
+							<th>STATUS</th>
+							<th>PORTS</th>
+							<th>NAMES</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>58a8a6ed926a</td>
+							<td>earthlabcu/firedpy:latest</td>
+							<td>"/bin/entry.sh ttyd …"</td>
+							<td>2 minutes ago</td>
+							<td>Up 2 minutes</td>
+							<td>127.0.0.1:32768→7681/tcp</td>
+							<td>stupefied_hypatia</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4>2.2 Copy firedpy outputs to your local machine</h4>
+				<p>Exit the container:</p>
+				<pre><code>exit</code></pre>
+				<p>Copy files out:</p>
+				<pre><code>docker cp unruffled_clarke:/home/firedpy/proj/outputs/shapefiles/fired_events_s5_t11_2020153.gpkg /home/Documents/</code></pre>
+				<h3>Use</h3>
+				<p>Create a <code>.netrc</code> file to avoid repeated authentication:</p>
+				<p><a href="https://nsidc.org/data/user-resources/help-center/creating-netrc-file-earthdata-login">Earthdata .netrc instructions</a></p>
+				<p>Run the CLI:</p>
+				<pre><code>firedpy --help</code></pre>
+				<p>Example run:</p>
+				<pre><code>firedpy --project_directory ~/scratch/firedpy_finland --country Finland</code></pre>
+				<p>Interactive mode:</p>
+				<pre><code>firedpy -i</code></pre>
+				<p>More examples:</p>
+				<pre><code>firedpy -p ~/scratch/firedpy_finland --country Finland --spatial_param 6 --temporal_param 10</code></pre>
+				<pre><code>firedpy -p ~/scratch/firedpy_nw_brazil --tiles "h11v09 h12v09" -sp 6 -tp 10</code></pre>
+				<pre><code>firedpy -p ~/scratch/firedpy_nw_brazil -t "h11v09 h12v09" -sp 6 -tp 10 --start_year 2020 --end_year 2024</code></pre>
+				<pre><code>firedpy -p ~/scratch/firedpy_nw_brazil -t "h11v09 h12v09" -sp 6 -tp 10 -y1 2020 -y2 2024 --eco_region_type 3</code></pre>
+				<pre><code>firedpy -p ~/scratch/firedpy_nw_brazil -t "h11v09 h12v09" -sp 6 -tp 10 -y1 2020 -y2 2024 --et 3 --land_cover_type 4 --daily</code></pre>
+			</div>
+		</section>
+		<section id="footer">
+			<ul class="copyright">
+				<li>&copy; EarthLab: A Part of CIRIES at the University of Colorado, Boulder</li><li>Design: <a href="www.rerickson.me">R. Erickson</a></li>
+			</ul>
+		</section>
+		<a href="#top" class="to-top">↑</a>
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/custom_stuff.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/custom_stuff.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
