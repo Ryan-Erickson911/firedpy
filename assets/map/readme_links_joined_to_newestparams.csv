@@ -1,0 +1,253 @@
+country_name,REGION,SUBREGION,UN,spatial,temporal,V2022,V2024S1T5,f_file_name
+Afghanistan,142,34,4,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/rj4306237),afghanistan_s3t8
+Aland,150,154,248,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5138jg697),aland_s5t11
+Albania,150,39,8,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/wp988m53f),albania_s5t11
+Algeria,2,15,12,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/8910jv77j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/bc386k800),algeria_s5t11
+American Samoa,9,61,16,3,8,,,american_samoa_s3t8
+Andorra,150,39,20,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/xp68kh87x),andorra_s5t11
+Angola,2,17,24,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/t435gf21z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/d504rn23b),angola_s1t1
+Anguilla,19,29,660,3,8,,,anguilla_s3t8
+Antigua and Barbuda,19,29,28,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/st74cs33x),antigua_and_barbuda_s3t8
+Argentina,19,5,32,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/5t34sk58k),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/td96k4315),argentina_s1t2
+Armenia,142,145,51,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/gf06g385j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/7h149r64k),armenia_s3t8
+Aruba,19,29,533,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9880vs496),aruba_s3t8
+Ashmore and Cartier Islands,9,53,36,3,8,,,ashmore_and_cartier_islands_s3t8
+Australia,9,53,36,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152),australia_s3t8
+Austria,150,155,40,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),,austria_s5t11
+Azerbaijan,142,145,31,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/gf06g385j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qb98mg90m),azerbaijan_s3t8
+Bahrain,142,145,48,1,2,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/c534fq70v),bahrain_s1t2
+Bangladesh,142,34,50,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/d791sh33k),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5d86p199z),bangladesh_s1t2
+Barbados,19,29,52,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/m613n033c),barbados_s3t8
+Belarus,150,151,112,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/r781wh632),belarus_s5t11
+Belgium,150,155,56,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/hh63sx489),belgium_s5t11
+Belize,19,13,84,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/q524jq679),belize_s3t8
+Benin,2,11,204,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/z603qz58m),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/fb494b180),benin_s1t1
+Bermuda,19,21,60,3,8,,,bermuda_s3t8
+Bhutan,142,34,64,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/n009w342h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2b88qd74k),bhutan_s3t8
+Bolivia,19,5,68,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/b2773w83t),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/2f75r992r),bolivia_s1t2
+Bosnia and Herzegovina,150,39,70,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/dz010s09q),bosnia_and_herzegovina_s5t11
+Botswana,2,18,72,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/b8515p69g),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nv9354593),botswana_s1t1
+Brazil,19,5,76,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/05741s90q),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/b8515q25m),brazil_s1t2
+British Indian Ocean Territory,2,14,86,3,8,,,british_indian_ocean_territory_s3t8
+British Virgin Islands,19,29,92,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/jq085m540),british_virgin_islands_s3t8
+Brunei,142,35,96,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/mp48sd92p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0v8382100),brunei_s1t2
+Bulgaria,150,151,100,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),,bulgaria_s5t11
+Burkina Faso,2,11,854,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/9g54xj875),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x633f2869),burkina_faso_s1t1
+Burundi,2,14,108,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/3f462659h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/vt150k986),burundi_s1t1
+Cabo Verde,2,11,132,1,1,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/v692t782j),cabo_verde_s1t1
+Cambodia,142,35,116,1,2,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2r36v0354),cambodia_s1t2
+Cameroon,2,17,120,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/x920fz208),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/d217qr28g),cameroon_s1t1
+Canada,19,21,124,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/gf06g388c),[2001-2024](https://scholar.colorado.edu/concern/datasets/0p096866d),canada_s5t11
+Cayman Islands,19,29,136,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0r967557n),cayman_islands_s3t8
+Central African Republic,2,17,140,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/pv63g1576),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/zp38wf351),central_african_republic_s1t1
+Chad,2,17,148,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/707958762),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/s4655j45w),chad_s1t1
+Chile,19,5,152,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/qr46r2052),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/g732db604),chile_s3t8
+China,142,30,156,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/qz20st810),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/tt44pp77n),china_s3t8
+Colombia,19,5,170,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/mp48sd91d),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/8c97ks03f),colombia_s1t2
+Comoros,2,14,174,1,1,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/s7526f22t),comoros_s1t1
+Cook Islands,9,61,184,3,8,,,cook_islands_s3t8
+Costa Rica,19,13,188,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/mc87pr85g),costa_rica_s3t8
+Croatia,150,39,191,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/kh04dr144),croatia_s5t11
+Cuba,19,29,192,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5712m8365),cuba_s3t8
+Curacao,19,29,531,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/ws859h28b),curacao_s3t8
+Cyprus,142,145,196,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/tx31qk48f),cyprus_s3t8
+Czechia,150,151,203,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/fq977w613),czechia_s5t11
+Democratic Republic of the Congo,2,17,180,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/5425kb88g),,[Nov 2000-Dec 2024 (s1t1)](https://scholar.colorado.edu/concern/datasets/4b29b780c)
+Denmark,150,154,208,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/sb397945f),,denmark_s5t11
+Djibouti,2,14,262,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/1831cm01x),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/rf55z935n),djibouti_s5t11
+Dominica,19,29,212,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/hd76s170r),dominica_s3t8
+Dominican Republic,19,29,214,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1j92g9289),dominican_republic_s3t8
+East Timor,142,35,626,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/j098zc184),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/c247dt86h),east_timor_s3t8
+Ecuador,19,5,218,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/pc289k34n),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5138jg700),ecuador_s1t2
+Egypt,2,15,818,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/vm40xt27j),egypt_s5t11
+El Salvador,19,13,222,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/m613n034n),el_salvador_s3t8
+Equatorial Guinea,2,17,226,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vx021g32b),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/j67315565),equatorial_guinea_s3t8
+Eritrea,2,14,232,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/5m60qt182),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/jd472x93p),eritrea_s1t1
+Estonia,150,154,233,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/73666649m),estonia_s5t11
+Eswatini,2,18,748,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/9w0324116),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2j62s642s),eswatini_s1t1
+Ethiopia,2,14,231,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/z316q2977),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/0c483m44k),ethiopia_s1t1
+Falkland Islands,19,5,238,3,8,,,falkland_islands_s3t8
+Faroe Islands,150,154,234,5,11,,,faroe_islands_s5t11
+Federated States Of Micronesia,9,57,583,3,8,,,federated_states_of_micronesia_s3t8
+Fiji,9,54,242,3,8,,,fiji_s3t8
+Finland,150,154,246,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/6395w836j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/pk02cc33v),finland_s5t11
+France,150,155,250,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),,france_s5t11
+French Guiana,19,5,254,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/qv33rx839),,french_guiana_s3t8
+French Polynesia,9,61,258,3,8,,,french_polynesia_s3t8
+French Southern and Antarctic Lands,10,14,260,3,8,,,french_southern_and_antarctic_lands_s3t8
+Gabon,2,17,266,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/2z10wr67h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5x21th08t),gabon_s1t1
+Gambia,2,11,270,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/pn89d7911),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/3t945s634),gambia_s1t1
+Georgia,142,145,268,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/gf06g385j),,georgia_s3t8
+Germany,150,155,276,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6w924d770),germany_s5t11
+Ghana,2,11,288,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/2r36tz735),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/79408001x),ghana_s1t1
+Greece,150,39,300,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/bc386k355),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z316q349s),greece_s5t11
+Greenland,19,21,304,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/bv73c218z),greenland_s3t8
+Grenada,19,29,308,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9880vs50z),grenada_s3t8
+Guadeloupe,19,29,312,3,8,[Nov 2001-Mar 2021](https://scholar.colorado.edu/concern/datasets/x633f230f),,guadelopupe_and_martinique_s3t8
+Martinique,19,29,474,3,8,[Nov 2001-Mar 2021](https://scholar.colorado.edu/concern/datasets/x633f230f),,guadelopupe_and_martinique_s3t8
+Guam,9,57,316,3,8,,,guam_s3t8
+Guatemala,19,13,320,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nv935460v),guatemala_s3t8
+Guernsey,150,154,831,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/bz60cx90j),guernsey_s5t11
+Guinea,2,11,324,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/05741s910),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/02870x464),guinea_s1t1
+Guinea Bissau,2,11,624,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/nc580n858),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/k643b3048),guinea_bissau_s1t1
+Guyana,19,5,328,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/qv33rx839),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5h73pz00k),guyana_s3t8
+Haiti,19,29,332,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/707959237),haiti_s3t8
+Heard Island and Mcdonald Islands,10,53,334,3,8,,,heard_island_and_mcdonald_islands_s3t8
+Honduras,19,13,340,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/n296x082p),honduras_s3t8
+Hong Kong,142,30,344,5,11,,,hong_kong_s5t11
+Hungary,150,151,348,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/bc386m008),hungary_s5t11
+Iceland,150,154,352,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/sb397945f),,iceland_s5t11
+India,142,34,356,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/ht24wk47t),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/cv43nz55k),india_s1t2
+Indian Ocean Territories,9,53,36,3,8,,,indian_ocean_territories_s3t8
+Indonesia,142,35,360,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/p2676w918),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/3b591b55c),indonesia_s1t2
+Iran,142,34,364,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/00000172f),iran_s3t8
+Iraq,142,145,368,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/w95052166),iraq_s3t8
+Ireland,150,154,372,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/pc289k33c),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/4m90dx459),ireland_s5t11
+Isle Of Man,150,154,833,5,11,,,isle_of_man_s5t11
+Israel,142,145,376,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5m60qt777),israel_s3t8
+Italy,150,39,380,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v979v416g),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/tb09j7441),italy_s5t11
+Ivory Coast,2,11,384,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/vq27zp62f),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/rj430651d),ivory_coast_s1t1
+Jamaica,19,29,388,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/xg94hr218),jamaica_s3t8
+Japan,142,30,392,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/dz010r34v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/zk51vj85q),japan_s3t8
+Jersey,150,154,832,5,11,,,jersey_s5t11
+Jordan,142,145,400,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),,jordan_s5t11
+Kazakhstan,142,143,398,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1r66j289k),kazakhstan_s3t8
+Kenya,2,14,404,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/1j92g871c),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/v405sc03w),kenya_s1t1
+Kiribati,9,57,296,3,8,,,kiribati_s3t8
+Kosovo,150,39,688,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/f1881n864),kosovo_s5t11
+Kuwait,142,145,414,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z316q350j),kuwait_s5t11
+Kyrgyzstan,142,143,417,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/3197xn61c),kyrgyzstan_s3t8
+Laos,142,35,418,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/bz60cx389),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/gq67js85b),laos_s1t2
+Latvia,150,154,428,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/fn1070711),latvia_s5t11
+Lebanon,142,145,422,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qj72p8661),lebanon_s5t11
+Lesotho,2,18,426,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/cr56n229w),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/w6634543v),lesotho_s1t1
+Liberia,2,11,430,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/6h440t58k),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qv33rz453),liberia_s1t1
+Libya,2,15,434,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/8910jv77j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z890rv992),libya_s5t11
+Liechtenstein,150,155,438,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/f7623f56w),liechtenstein_s5t11
+Lithuania,150,154,440,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qb98mg925),lithuania_s5t11
+Luxembourg,150,155,442,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),,luxembourg_s5t11
+Macao,142,30,446,1,2,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/3f4627044),macao_s1t2
+Macedonia,150,39,807,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/g158bj86s),macedonia_s5t11
+Madagascar,2,14,450,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/fb494955x),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/pv63g217f),madagascar_s1t1
+Malawi,2,14,454,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/5999n464m),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/t722hb67t),malawi_s1t1
+Malaysia,142,35,458,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/fq977w13f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/3484zj46h),malaysia_s1t2
+Maldives,142,34,462,3,8,,,maldives_s3t8
+Mali,2,11,466,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/pr76f4544),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/td96k433q),mali_s1t1
+Malta,150,39,470,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/sx61dp12d),malta_s5t11
+Marshall Islands,9,57,584,3,8,,,marshall_islands_s3t8
+Mauritania,2,11,478,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/x059c864s),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/v979v479r),mauritania_s5t11
+Mauritius,2,14,480,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1831cm54z),mauritius_s3t8
+Mexico,19,13,484,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5x21th07j),mexico_s3t8
+Moldova,150,151,498,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/d217qr276),moldova_s5t11
+Monaco,150,155,492,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2514nn122),monaco_s5t11
+Mongolia,142,30,496,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/4x51hk21h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5t34sm20v),mongolia_s5t11
+Montenegro,150,39,499,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1g05fd436),montenegro_s5t11
+Montserrat,19,29,500,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/3r074w69k),montserrat_s3t8
+Morocco,2,15,504,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/td96k3751),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qj72p8679),morocco_s5t11
+Mozambique,2,14,508,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/1n79h5504),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2n49t338q),mozambique_s1t1
+Myanmar,142,35,104,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/pk02cb86p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/bv73c2197),myanmar_s1t2
+Namibia,2,18,516,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/db78td244),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5999n508g),namibia_s1t1
+Nauru,9,57,520,3,8,,,nauru_s3t8
+Nepal,142,34,524,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/mk61rj10w),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/c534fq757),nepal_s3t8
+Netherlands,150,155,528,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0k225c86c),netherlands_s5t11
+New Caledonia,9,54,540,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/8w32r765q),new_caledonia_s3t8
+New South Wales,9,53,36,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/37720d85c),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152),
+New Zealand,9,53,554,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/9g54xj88f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/h989r495c),new_zealand_s3t8
+Nicaragua,19,13,558,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/rb68xd57f),nicaragua_s3t8
+Niger,2,11,562,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/m039k605q),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qn59q5683),niger_s1t1
+Nigeria,2,11,566,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/cv43nx78p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/j6731584b),nigeria_s1t1
+Niue,9,61,570,3,8,,,niue_s3t8
+Norfolk Island,9,53,574,3,8,,,norfolk_island_s3t8
+North Korea,142,30,408,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/3j333327g),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/f7623f59q),north_korea_s3t8
+Northern Cyprus,142,145,196,5,11,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/4m90dx238),northern_cyprus_s5t11
+Northern Mariana Islands,9,57,580,3,8,,,northern_mariana_islands_s3t8
+Northern Territory,9,53,36,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/bn9997900),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152),
+Norway,150,154,578,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/sb397945f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/70795924h),norway_s5t11
+Oman,142,145,512,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nz806134g),oman_s5t11
+Pakistan,142,34,586,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/8g84mn93n),pakistan_s3t8
+Palau,9,57,585,3,8,,,palau_s3t8
+Palestine,142,145,275,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nc580p37t),palestine_s5t11
+Panama,19,13,591,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6q182m92n),panama_s3t8
+Papua New Guinea,9,54,598,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/3r074w183),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/bk128c732),papua_new_guinea_s1t2
+Paraguay,19,5,600,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/rb68xd05p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/fn1070729),paraguay_s1t2
+Peru,19,5,604,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x346d5616),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/wh246t78k),peru_s3t8
+Philippines,142,35,608,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/7d278v06f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/b8515q26w),philippines_s1t2
+Pitcairn Islands,9,61,612,3,8,,,pitcairn_islands_s3t8
+Poland,150,151,616,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/4b29b7569),poland_s5t11
+Portugal,150,39,620,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/gb19f7006),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/f4752j497),portugal_s5t11
+Puerto Rico,19,29,630,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/gt54kq07d),puerto_rico_s3t8
+Qatar,142,145,634,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/j098zc672),qatar_s5t11
+Queensland,9,53,36,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/cr56n230n),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152),
+Republic Of Serbia,150,39,688,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5h73pz01v),republic_of_serbia_s5t11
+Congo,2,17,178,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/nk322f305),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/t435gf783),republic_of_the_congo_s1t1
+Romania,150,151,642,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/w3763834n),romania_s5t11
+Russia,150,151,643,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/q811kk87t),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/f7623f60g),russia_s5t11
+Rwanda,2,14,646,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/st74cr782),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/jw827d403),rwanda_s1t1
+Saint Barthelemy,19,29,652,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/h989r4943),saint_barthelemy_s3t8
+Saint Helena,2,11,654,3,8,,,saint_helena_s3t8
+Saint Kitts and Nevis,19,29,659,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2f75r969z),saint_kitts_and_nevis_s3t8
+Saint Lucia,19,29,662,3,8,,,saint_lucia_s3t8
+Saint Martin,19,29,663,3,8,,,saint_martin_s3t8
+Saint Pierre and Miquelon,19,21,666,3,8,,,saint_pierre_and_miquelon_s3t8
+Saint Vincent and The Grenadines,19,29,670,3,8,,,saint_vincent_and_the_grenadines_s3t8
+Samoa,9,61,882,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/kw52j9917),samoa_s3t8
+San Marino,150,39,674,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/zk51vj568),san_marino_s3t8
+Sao Tome and Principe,2,17,678,1,1,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2227mr49g),sao_tome_and_principe_s1t1
+Saudi Arabia,142,145,682,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/g732db61d),saudi_arabia_s5t11
+Senegal,2,11,686,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/tt44pp176),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/v118rg081),senegal_s1t1
+Seychelles,2,14,690,3,8,,,seychelles_s3t8
+Sierra Leone,2,11,694,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/5712m779r),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/r781wh64b),sierra_leone_s1t1
+Singapore,142,35,702,1,2,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/12579t91m),singapore_s1t2
+Sint Maarten,19,29,534,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/7d278v61h),sint_maarten_s3t8
+Slovakia,150,151,703,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/cr56n2793),slovakia_s5t11
+Slovenia,150,39,705,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/tq57ns75v),slovenia_s5t11
+Solomon Islands,9,54,90,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6t053h70v),solomon_islands_s3t8
+Somalia,2,14,706,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/xd07gt798),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/q524jq68k),somalia_s5t11
+Somaliland,2,14,706,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/8c97kr53f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/08612q175),somaliland_s5t11
+South Africa,2,18,710,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/rf55z8833),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z603r0092),south_africa_s1t1
+South Australia,9,53,36,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/fn107015p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152),
+South Georgia and The Islands,19,5,239,3,8,,,south_georgia_and_the_islands_s3t8
+South Korea,142,30,410,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/pg15bg177),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/kw52j990z),south_korea_s3t8
+South Sudan,2,14,728,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/b2773w89g),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1g05fd479),south_sudan_s1t1
+Spain,150,39,724,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/gb19f7006),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/xw42n953k),spain_s5t11
+Sri Lanka,142,34,144,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/9z9030982),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/ws859h30c),sri_lanka_s3t8
+Sudan,2,15,729,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/g158bj37v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9880vs542),sudan_s1t1
+Suriname,19,5,740,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/qv33rx839),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/n583xw60q),suriname_s3t8
+Sweden,150,154,752,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/sb397945f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1j92g930b),sweden_s5t11
+Switzerland,150,155,756,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1g05fd42x),switzerland_s5t11
+Syria,142,145,760,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/765373194),syria_s5t11
+Taiwan,142,30,158,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/df65v9276),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6t053h714),taiwan_s1t2
+Tajikistan,142,143,762,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9k41zg39z),tajikistan_s3t8
+Tanzania,2,14,834,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/7w62f947x),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/76537320w),tanzania_s1t1
+Tasmania,9,53,36,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/c534fq19w),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152),
+Thailand,142,35,764,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/xs55md39h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qj72p868k),thailand_s1t2
+Bahamas,19,29,44,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/t722hb658),the_bahamas_s3t8
+Togo,2,11,768,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/fj236325p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qf85nd104),togo_s1t1
+Tonga,9,61,776,3,8,,,tonga_s3t8
+Trinidad and Tobago,19,29,780,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9c67wp39g),trinidad_and_tobago_s3t8
+Tunisia,2,15,788,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/8910jv77j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/kp78gj27x),tunisia_s5t11
+Turkey,142,145,792,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),,turkey_s3t8
+Turkmenistan,142,143,795,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/4m90dx24j),turkmenistan_s3t8
+Turks and Caicos Islands,19,29,796,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/cv43nz30q),turks_and_caicos_islands_s3t8
+Uganda,2,14,800,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/hh63sx004),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/7d278v62s),uganda_s1t1
+Ukraine,150,151,804,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/08612q18f),ukraine_s5t11
+United Arab Emirates,142,145,784,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5138jg718),united_arab_emirates_s5t11
+United Kingdom,150,154,826,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/pc289k33c),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/sf268684c),united_kingdom_s5t11
+United States Virgin Islands,19,29,850,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/pv63g214m),united_states_virgin_islands_s3t8
+Uruguay,19,5,858,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/q524jq130),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/q237ht604),uruguay_s1t2
+Usa Alaska,19,21,840,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/d504rm74m),[Nov 2001- July 2024](https://scholar.colorado.edu/concern/datasets/fx719p11c),usa_alaska_s5t11
+Usa Hawaii,19,21,840,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r06p),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/sn00b078q),usa_hawaii_s3t8
+Usa Lower48,19,21,840,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/8336h304x),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0g354g88p),usa_lower48_s5t11
+Uzbekistan,142,143,860,3,8,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/ff365704w),uzbekistan_s3t8
+Vanuatu,9,54,548,3,8,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z316q351t),vanuatu_s3t8
+Vatican,150,39,336,5,11,,,vatican_s5t11
+Venezuela,19,5,862,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/7m01bm95m),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/c534fq76h),venezuela_s1t2
+Victoria,9,53,36,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/2r36tz74f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152),
+Vietnam,142,35,704,1,2,[2001-2021](https://scholar.colorado.edu/concern/datasets/h702q7566),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/rn301342p),vietnam_s1t2
+Wallis and Futuna,9,61,876,3,8,,,wallis_and_futuna_s3t8
+Western Australia,9,53,36,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/k35695559),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152),
+Western Sahara,2,15,732,5,11,,,western_sahara_s5t11
+Yemen,142,145,887,5,11,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qb98mg91w),yemen_s5t11
+Zambia,2,14,894,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/6108vc441),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qv33rz46c),zambia_s1t1
+Zimbabwe,2,14,716,1,1,[2001-2021](https://scholar.colorado.edu/concern/datasets/f7623d95c),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/np193b769),zimbabwe_s1t1
+intended for use in conjunction with GOES16 active fire detections,,,,,,[Jan 2017-Mar 2020](https://scholar.colorado.edu/concern/datasets/d217qq78g),,
