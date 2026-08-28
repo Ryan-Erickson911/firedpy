@@ -6,7 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js"></script>
 	</head>
@@ -15,13 +15,13 @@
 		<div id="top"></div>
 		<div id="scrollheader">
 			<header class="col-12">
-				<span><a href="https://earthlab.colorado.edu"><img src="assets/imgs/earthlab_homepage.png" style="width: 150px;"/></a></span>
+				<span><a href="https://earthlab.colorado.edu"><img src="imgs/earthlab_homepage.png" style="width: 150px;"/></a></span>
 			</header>
 		</div>
 		<!-- Header -->
 		<section id="header">
 			<div class="inner">
-				<span><img src="assets/imgs/earthlab_logo.png" style="width: 200px;"/></span>
+				<span><img src="imgs/earthlab_logo.png" style="width: 200px;"/></span>
 				<h1><strong>Firedpy</strong> by EarthLab<br /></h1>
 				<p>A MODIS 6 Python CLI for Burn Data and Statistics</p>
 				<ul class="actions special">
@@ -41,7 +41,7 @@
 						<header class="major">
 							<h2>A Python Command-Line Interface for classifying fire events from the Collection 6 MODIS Burned Area Product.</h2>
 						</header>
-						<span class="image fit"><img src="assets/imgs/rim_fire_ca.png" alt="" /></span>
+						<span class="image fit"><img src="imgs/rim_fire_ca.png" alt="" /></span>
 						<p id="authors">This package uses a space-time window to classify individual burn detections from late 2001 to near-present into discrete events and return both a data table and shapefiles of these events.</p>
 						<header class="major">
 							<h2>Methodological information for FIREDpy 1.0:</h2>
@@ -76,9 +76,9 @@
 					</div>
 				</div>
 			</div>
-			<center><div id="map">
-				<div id="sidebar" style="color: black" >
-					<h2 style="color: black; text-align: center; margin:0;">Avaliable Datasets</h2>
+			<center><div id="map-layout"><div id="map"></div>
+				<div id="sidebar" >
+					<h2 style="color: black; text-align: center; margin:0">Avaliable Data</h2>
 					<div class="legend">
 						<div class="legend-item">
 							<span class="square sq1"></span>1
@@ -93,14 +93,15 @@
 							<span class="square sq4"></span>4+
 						</div>
 					</div>
-					<input id="searchBox" type="text" placeholder="Search for a country..." style="width:100%; padding:6px; margin-bottom:8px; height:30px;">
+					<input id="searchBox" type="text" placeholder="Search for a country..." style="width:100%; padding:6px; margin-bottom:8px; height:30px; color:black">
 					<select id="regionSelect"></select>
 					<select id="subregionSelect"></select>
 					<select id="countrySelect"></select>
 					<div id="datasetSelect"></div>
+					<button id="resetButton" type="button">Reset</button>
 				</div>
 			</div></center>
-			<script src="assets/js/firedpy_map.js"></script>	
+			<script src="js/firedpy_map.js"></script>	
 		</section>
 		<!-- Three -->
 		<section id="three" class="main style1 special">
@@ -115,7 +116,7 @@
 					<h1>The MODIS Sinusioidal Project</h1>
 				</header>
 				<p>You may specify study areas for FIREDpy using individual MODIS tiles. This product uses a Sinusoidal, Lambert Azimuthal Equal-Area projection. There are several spatial resolutions available for this data, but FIREDpy uses the 500m resolution (actual distances depend on location). For more information about this projection, click <a href="https://modis-land.gsfc.nasa.gov/MODLAND_grid.html" style="border-bottom: dotted 1px #666;">here</a>. If you would like to use the MODIS sinusoidal grid IDs to identify FIREDpy study areas, see the visualization of this grid below.</p>
-				<span><img width="105%" alt="image" src="assets/imgs/modis_land_id_map_robinson.png" /></span>
+				<span><img width="105%" alt="image" src="imgs/modis_land_id_map_robinson.png" /></span>
 			</div>
 		</section>
 		<!-- Four -->
@@ -363,12 +364,12 @@
 		</section>
 		<a href="#top" class="to-top">↑</a>
 		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/custom_stuff.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/browser.min.js"></script>
+		<script src="js/breakpoints.min.js"></script>
+		<script src="js/upbutton.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

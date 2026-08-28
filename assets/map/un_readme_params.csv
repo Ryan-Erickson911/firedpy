@@ -1,0 +1,253 @@
+,UN,country_name,Country,REGION,SUBREGION,spatial,temporal,V2022,V2024S1T5
+0,4,Afghanistan,Afghanistan,Asia,South Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/rj4306237) 
+1,8,Albania,Albania,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/wp988m53f)
+2,12,Algeria,Algeria,Africa,North Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/8910jv77j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/bc386k800)
+3,16,American Samoa,American Samoa,Oceania,Polynesia,3.0,8.0,,
+4,20,Andorra,Andorra,Europe,South Europe,5.0,11.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/xp68kh87x)
+5,24,Angola,Angola,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/t435gf21z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/d504rn23b)
+6,28,Antigua And Barbuda,Antigua And Barbuda,Americas,Carribean,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/st74cs33x)
+7,31,Azerbaijan,Azerbaijan,Asia,West Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/gf06g385j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qb98mg90m)
+8,32,Argentina,Argentina,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5t34sk58k),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/td96k4315)
+9,36,Ashmore And Cartier Islands,Australia,Oceania,Australia,3.0,8.0,,
+10,36,Australia,Australia,Oceania,Australia,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152) 
+11,36,Indian Ocean Territories,Australia,Oceania,Australia,3.0,8.0,,
+12,36,New South Wales + Capital Territory,Australia,Oceania,Australia,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/37720d85c),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152) 
+13,36,Northern Territory,Australia,Oceania,Australia,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/bn9997900),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152) 
+14,36,Queensland,Australia,Oceania,Australia,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/cr56n230n),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152) 
+15,36,South Australia,Australia,Oceania,Australia,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/fn107015p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152) 
+16,36,Tasmania,Australia,Oceania,Australia,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/c534fq19w),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152) 
+17,36,Victoria,Australia,Oceania,Australia,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/2r36tz74f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152) 
+18,36,Western Australia,Australia,Oceania,Australia,,,[2001-2021](https://scholar.colorado.edu/concern/datasets/k35695559),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x059c9152) 
+19,40,Austria,Austria,Europe,West Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),
+20,44,The Bahamas,Bahamas,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/t722hb658)
+21,48,Bahrain,Bahrain,Asia,West Asia,1.0,2.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/c534fq70v)
+22,50,Bangladesh,Bangladesh,Asia,South Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/d791sh33k),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5d86p199z)
+23,51,Armenia,Armenia,Asia,West Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/gf06g385j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/7h149r64k)
+24,52,Barbados,Barbados,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/m613n033c)
+25,56,Belgium,Belgium,Europe,West Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/hh63sx489)
+26,60,Bermuda,Bermuda,Americas,North America,3.0,8.0,,
+27,64,Bhutan,Bhutan,Asia,South Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/n009w342h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2b88qd74k)
+28,68,Bolivia,Bolivia,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/b2773w83t),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/2f75r992r)
+29,70,Bosnia And Herzegovina,Bosnia And Herzegovina,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/dz010s09q)
+30,72,Botswana,Botswana,Africa,South Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/b8515p69g),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nv9354593)
+31,76,Brazil,Brazil,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/05741s90q),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/b8515q25m)
+32,84,Belize,Belize,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/q524jq679) 
+33,86,British Indian Ocean Territory,British Indian Ocean Territory,0,Territory,3.0,8.0,,
+34,90,Solomon Islands,Solomon Islands,Oceania,Melanesia,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6t053h70v)
+35,92,British Virgin Islands,Virgin Islands,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/jq085m540)
+36,96,Brunei,Brunei Darussalam,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/mp48sd92p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0v8382100)
+37,100,Bulgaria,Bulgaria,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),
+38,104,Myanmar,Myanmar,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/pk02cb86p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/bv73c2197)
+39,108,Burundi,Burundi,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/3f462659h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/vt150k986)
+40,112,Belarus,Belarus,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/r781wh632)
+41,116,Cambodia,Cambodia,Asia,South-East Asia,1.0,2.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2r36v0354)
+42,120,Cameroon,Cameroon,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x920fz208),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/d217qr28g)
+43,124,Canada,Canada,Americas,North America,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/gf06g388c),[2001-2024](https://scholar.colorado.edu/concern/datasets/0p096866d) 
+44,132,Cabo Verde,Cabo Verde,Africa,West Africa,1.0,1.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/v692t782j)
+45,136,Cayman Islands,Cayman Islands,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0r967557n)
+46,140,Central African Republic,Central African Republic,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/pv63g1576),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/zp38wf351)
+47,144,Sri Lanka,Sri Lanka,Asia,South Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/9z9030982),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/ws859h30c)
+48,148,Chad,Chad,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/707958762),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/s4655j45w)
+49,152,Chile,Chile,Americas,South America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/qr46r2052),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/g732db604)
+50,156,China,China,Asia,East Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/qz20st810),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/tt44pp77n)
+51,158,Taiwan,Taiwan,0,Territory,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/df65v9276),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6t053h714)
+52,170,Colombia,Colombia,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/mp48sd91d),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/8c97ks03f)
+53,174,Comoros,Comoros,Africa,East Africa,1.0,1.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/s7526f22t)
+54,178,Republic Of The Congo,Congo,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/nk322f305),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/t435gf783)
+55,180,Democratic Republic Of The Congo,Congo,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5425kb88g),
+56,184,Cook Islands,Cook Islands,Oceania,Polynesia,3.0,8.0,,
+57,188,Costa Rica,Costa Rica,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/mc87pr85g) 
+58,191,Croatia,Croatia,Europe,South Europe,5.0,11.0,,[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/kh04dr144)
+59,192,Cuba,Cuba,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5712m8365)
+60,196,Cyprus,Cyprus,Asia,West Asia,3.0,8.0,,[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/tx31qk48f)
+61,203,Czechia,Czechia,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/fq977w613)
+62,204,Benin,Benin,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/z603qz58m),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/fb494b180)
+63,208,Denmark,Denmark,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/sb397945f),
+64,212,Dominica,Dominica,Americas,Carribean,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/hd76s170r)
+65,214,Dominican Republic,Dominican Republic,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1j92g9289)
+66,218,Ecuador,Ecuador,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/pc289k34n),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5138jg700)
+67,222,El Salvador,El Salvador,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/m613n034n)
+68,226,Equatorial Guinea,Equatorial Guinea,Africa,Middle Africa,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vx021g32b),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/j67315565)
+69,231,Ethiopia,Ethiopia,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/z316q2977),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/0c483m44k)
+70,232,Eritrea,Eritrea,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5m60qt182),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/jd472x93p)
+71,233,Estonia,Estonia,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/73666649m)
+72,234,Faroe Islands,Faroe Islands,Europe,North Europe,5.0,11.0,,
+73,238,Falkland Islands,Falkland Islands (Malvinas),Americas,South America,3.0,8.0,,
+74,239,South Georgia And The Islands,South Georgia And The South Sandwich Islands,0,Territory,3.0,8.0,,
+75,242,Fiji,Fiji,Oceania,Melanesia,3.0,8.0,,
+76,246,Finland,Finland,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/6395w836j),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/pk02cc33v)
+77,248,Aland,Åland Islands,Europe,North Europe,5.0,11.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5138jg697)
+78,250,France,France,Europe,West Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),
+79,250,French Southern And Antarctic Lands,France,Europe,West Europe,3.0,8.0,,
+80,254,French Guiana,French Guiana,Americas,South America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/qv33rx839),
+81,258,French Polynesia,French Polynesia,Oceania,Polynesia,3.0,8.0,,
+82,262,Djibouti,Djibouti,Africa,East Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/1831cm01x),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/rf55z935n)
+83,266,Gabon,Gabon,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/2z10wr67h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5x21th08t)
+84,268,Georgia,Georgia,Asia,West Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/gf06g385j),
+85,270,Gambia,Gambia,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/pn89d7911),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/3t945s634)
+86,275,Palestine,Palestine,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nc580p37t)
+87,276,Germany,Germany,Europe,West Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/6w924d770)
+88,288,Ghana,Ghana,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/2r36tz735),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/79408001x)
+89,296,Kiribati,Kiribati,Oceania,Micronesia,3.0,8.0,,
+90,300,Greece,Greece,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/bc386k355),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/z316q349s)
+91,304,Greenland,Greenland,Americas,North America,3.0,8.0,,[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/bv73c218z)
+92,308,Grenada,Grenada,Americas,Carribean,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9880vs50z)
+93,312,Guadeloupe,Guadeloupe,Americas,Carribean,3.0,8.0,,
+94,316,Guam,Guam,Oceania,Micronesia,3.0,8.0,,
+95,320,Guatemala,Guatemala,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nv935460v)
+96,324,Guinea,Guinea,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/05741s910),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/02870x464)
+97,328,Guyana,Guyana,Americas,South America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/qv33rx839),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5h73pz00k)
+98,332,Haiti,Haiti,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/707959237)
+99,334,Heard Island And Mcdonald Islands,Heard Island And Mcdonald Islands,0,Territory,3.0,8.0,,
+100,336,Vatican,Holy See (Vatican City State),Europe,South Europe,5.0,11.0,,
+101,340,Honduras,Honduras,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/n296x082p)
+102,344,Hong Kong,Hong Kong,Asia,East Asia,5.0,11.0,,
+103,348,Hungary,Hungary,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/bc386m008)
+104,352,Iceland,Iceland,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/sb397945f),
+105,356,India,India,Asia,South Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/ht24wk47t),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/cv43nz55k)
+106,360,Indonesia,Indonesia,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/p2676w918),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/3b591b55c)
+107,364,Iran,Iran,Asia,South Asia,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/00000172f)
+108,368,Iraq,Iraq,Asia,West Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/w95052166)
+109,372,Ireland,Ireland,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/pc289k33c),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/4m90dx459)
+110,376,Israel,Israel,Asia,West Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5m60qt777)
+111,380,Italy,Italy,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v979v416g),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/tb09j7441)
+112,384,Ivory Coast,Côte D'Ivoire,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vq27zp62f),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/rj430651d)
+113,388,Jamaica,Jamaica,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/xg94hr218)
+114,392,Japan,Japan,Asia,East Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/dz010r34v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/zk51vj85q)
+115,398,Kazakhstan,Kazakhstan,Asia,Central Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1r66j289k)
+116,400,Jordan,Jordan,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),
+117,404,Kenya,Kenya,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/1j92g871c),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/v405sc03w)
+118,408,North Korea,North Korea,Asia,East Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/3j333327g),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/f7623f59q)
+119,410,South Korea,South Korea,Asia,East Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/pg15bg177),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/kw52j990z)
+120,414,Kuwait,Kuwait,Asia,West Asia,5.0,11.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z316q350j)
+121,417,Kyrgyzstan,Kyrgyzstan,Asia,Central Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/3197xn61c)
+122,418,Laos,Laos,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/bz60cx389),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/gq67js85b)
+123,422,Lebanon,Lebanon,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qj72p8661)
+124,426,Lesotho,Lesotho,Africa,South Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/cr56n229w),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/w6634543v)
+125,428,Latvia,Latvia,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/fn1070711)
+126,430,Liberia,Liberia,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/6h440t58k),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qv33rz453)
+127,434,Libya,Libya,Africa,North Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/8910jv77j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z890rv992)
+128,438,Liechtenstein,Liechtenstein,Europe,West Europe,5.0,11.0,,[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/f7623f56w)
+129,440,Lithuania,Lithuania,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/qb98mg925)
+130,442,Luxembourg,Luxembourg,Europe,West Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),
+131,446,Macao,Macao,Asia,East Asia,1.0,2.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/3f4627044)
+132,450,Madagascar,Madagascar,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/fb494955x),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/pv63g217f)
+133,454,Malawi,Malawi,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5999n464m),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/t722hb67t)
+134,458,Malaysia,Malaysia,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/fq977w13f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/3484zj46h)
+135,462,Maldives,Maldives,Asia,South Asia,3.0,8.0,,
+136,466,Mali,Mali,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/pr76f4544),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/td96k433q)
+137,470,Malta,Malta,Europe,South Europe,5.0,11.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/sx61dp12d)
+138,474,Martinique,Martinique,Americas,Carribean,3.0,8.0,,
+139,478,Mauritania,Mauritania,Africa,West Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x059c864s),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/v979v479r)
+140,480,Mauritius,Mauritius,Africa,East Africa,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1831cm54z)
+141,484,Mexico,Mexico,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5x21th07j)
+142,492,Monaco,Monaco,Europe,West Europe,5.0,11.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2514nn122)
+143,496,Mongolia,Mongolia,Asia,East Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/4x51hk21h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5t34sm20v)
+144,498,Moldova,Moldova,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/d217qr276)
+145,499,Montenegro,Montenegro,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1g05fd436)
+146,500,Montserrat,Montserrat,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/3r074w69k)
+147,504,Morocco,Morocco,Africa,North Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/td96k3751),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qj72p8679)
+148,508,Mozambique,Mozambique,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/1n79h5504),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2n49t338q)
+149,512,Oman,Oman,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nz806134g)
+150,516,Namibia,Namibia,Africa,South Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/db78td244),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5999n508g)
+151,520,Nauru,Nauru,Oceania,Micronesia,3.0,8.0,,
+152,524,Nepal,Nepal,Asia,South Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/mk61rj10w),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/c534fq757)
+153,528,Netherlands,Netherlands,Europe,West Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0k225c86c)
+154,530,Curacao,,Americas,Carribean,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/ws859h28b)
+155,530,Dutch Carribean Colonies,,Americas,Carribean,3.0,8.0,,
+156,533,Aruba,Aruba,Americas,Carribean,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9880vs496)
+157,540,New Caledonia,New Caledonia,Oceania,Melanesia,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/8w32r765q)
+158,548,Vanuatu,Vanuatu,Oceania,Melanesia,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z316q351t)
+159,554,New Zealand,New Zealand,Oceania,Australia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/9g54xj88f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/h989r495c)
+160,558,Nicaragua,Nicaragua,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/rb68xd57f)
+161,562,Niger,Niger,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/m039k605q),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qn59q5683)
+162,566,Nigeria,Nigeria,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/cv43nx78p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/j6731584b)
+163,570,Niue,Niue,Oceania,Polynesia,3.0,8.0,,
+164,574,Norfolk Island,Norfolk Island,Oceania,Australia,3.0,8.0,,
+165,578,Norway,Norway,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/sb397945f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/70795924h)
+166,580,Northern Mariana Islands,Northern Mariana Islands,Oceania,Micronesia,3.0,8.0,,
+167,583,Federated States Of Micronesia,Micronesia,Oceania,Micronesia,3.0,8.0,,
+168,584,Marshall Islands,Marshall Islands,Oceania,Micronesia,3.0,8.0,,
+169,585,Palau,Palau,Oceania,Micronesia,3.0,8.0,,
+170,586,Pakistan,Pakistan,Asia,South Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/8g84mn93n)
+171,591,Panama,Panama,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6q182m92n)
+172,598,Papua New Guinea,Papua New Guinea,Oceania,Melanesia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/3r074w183),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/bk128c732)
+173,600,Paraguay,Paraguay,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/rb68xd05p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/fn1070729)
+174,604,Peru,Peru,Americas,South America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x346d5616),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/wh246t78k)
+175,608,Philippines,Philippines,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7d278v06f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/b8515q26w)
+176,612,Pitcairn Islands,Pitcairn,Oceania,Polynesia,3.0,8.0,,
+177,616,Poland,Poland,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/4b29b7569)
+178,620,Portugal,Portugal,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/gb19f7006),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/f4752j497)
+179,624,Guinea Bissau,Guinea-Bissau,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/nc580n858),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/k643b3048)
+180,626,East Timor,Timor-Leste,Asia,South-East Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/j098zc184),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/c247dt86h)
+181,630,Puerto Rico,Puerto Rico,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/gt54kq07d)
+182,634,Qatar,Qatar,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/j098zc672)
+183,642,Romania,Romania,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/w3763834n)
+184,643,Russia,Russian Federation,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/q811kk87t),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/f7623f60g)
+185,646,Rwanda,Rwanda,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/st74cr782),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/jw827d403)
+186,652,Saint Barthelemy,Saint Barthélemy,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/h989r4943)
+187,654,Saint Helena,Saint Helena,Africa,West Africa,3.0,8.0,,
+188,659,Saint Kitts And Nevis,Saint Kitts And Nevis,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2f75r969z)
+189,660,Anguilla,Anguilla,Americas,Carribean,3.0,8.0,,
+190,662,Saint Lucia,Saint Lucia,Americas,Carribean,3.0,8.0,,
+191,663,Saint Martin,Saint Martin (French Part),Americas,Carribean,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/7d278v61h)
+192,663,Sint Maarten,Saint Martin (French Part),Americas,Carribean,3.0,8.0,,
+193,666,Saint Pierre And Miquelon,Saint Pierre And Miquelon,Americas,North America,3.0,8.0,,
+194,670,Saint Vincent And The Grenadines,Saint Vincent And The Grenadines,Americas,Carribean,3.0,8.0,,
+195,674,San Marino,San Marino,Europe,South Europe,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/zk51vj568)
+196,678,Sao Tome And Principe,Sao Tome And Principe,Africa,Middle Africa,1.0,1.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2227mr49g)
+197,682,Saudi Arabia,Saudi Arabia,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/g732db61d)
+198,686,Senegal,Senegal,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/tt44pp176),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/v118rg081)
+199,688,Republic Of Serbia,Serbia,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5h73pz01v)
+200,689,Kosovo,,Europe,South Europe,5.0,11.0,,[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/f1881n864)
+201,690,Seychelles,Seychelles,Africa,East Africa,3.0,8.0,,
+202,694,Sierra Leone,Sierra Leone,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5712m779r),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/r781wh64b)
+203,702,Singapore,Singapore,Asia,South-East Asia,1.0,2.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/12579t91m)
+204,703,Slovakia,Slovakia,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/cr56n2793)
+205,704,Vietnam,Vietnam,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/h702q7566),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/rn301342p)
+206,705,Slovenia,Slovenia,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/tq57ns75v)
+207,706,Somalia,Somalia,Africa,East Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/xd07gt798),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/q524jq68k)
+208,706,Somaliland,Somalia,Africa,East Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/8c97kr53f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/08612q175)
+209,710,South Africa,South Africa,Africa,South Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/rf55z8833),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/z603r0092)
+210,716,Zimbabwe,Zimbabwe,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/f7623d95c),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/np193b769)
+211,724,Spain,Spain,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/gb19f7006),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/xw42n953k)
+212,728,South Sudan,South Sudan,Africa,North Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/b2773w89g),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1g05fd479)
+213,729,Sudan,Sudan,Africa,North Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/g158bj37v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9880vs542)
+214,732,Western Sahara,Western Sahara,Africa,North Africa,5.0,11.0,,
+215,740,Suriname,Suriname,Americas,South America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/qv33rx839),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/n583xw60q)
+216,748,Eswatini,Eswatini,Africa,South Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/9w0324116),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/2j62s642s)
+217,752,Sweden,Sweden,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/sb397945f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1j92g930b)
+218,756,Switzerland,Switzerland,Europe,West Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/v692t736f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/1g05fd42x)
+219,760,Syria,Syria,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/765373194)
+220,762,Tajikistan,Tajikistan,Asia,Central Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9k41zg39z)
+221,764,Thailand,Thailand,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/xs55md39h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qj72p868k)
+222,768,Togo,Togo,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/fj236325p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qf85nd104)
+223,776,Tonga,Tonga,Oceania,Polynesia,3.0,8.0,,
+224,780,Trinidad And Tobago,Trinidad And Tobago,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/9c67wp39g)
+225,784,United Arab Emirates,United Arab Emirates,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5138jg718)
+226,788,Tunisia,Tunisia,Africa,North Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/8910jv77j),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/kp78gj27x)
+227,792,Northern Cyprus,Türkiye,Asia,West Asia,5.0,11.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/4m90dx238)
+228,792,Turkey,Türkiye,Asia,West Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),
+229,795,Turkmenistan,Turkmenistan,Asia,Central Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/4m90dx24j)
+230,796,Turks And Caicos Islands,Turks And Caicos Islands,Americas,Carribean,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/cv43nz30q)
+231,800,Uganda,Uganda,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/hh63sx004),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/7d278v62s)
+232,804,Ukraine,Ukraine,Europe,East Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/08612q18f)
+233,807,Macedonia,North Macedonia,Europe,South Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/g158bj86s)
+234,818,Egypt,Egypt,Africa,North Africa,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/vm40xt27j)
+235,826,United Kingdom,United Kingdom,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/pc289k33c),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/sf268684c)
+236,831,Guernsey,Guernsey,Europe,North Europe,5.0,11.0,,[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/bz60cx90j)
+237,832,Jersey,Jersey,Europe,North Europe,5.0,11.0,,
+238,833,Isle Of Man,Isle Of Man,Europe,North Europe,5.0,11.0,,
+239,834,Tanzania,Tanzania,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7w62f947x),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/76537320w)
+240,840,Usa Alaska,United States,Americas,North America,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/d504rm74m),[Nov 2001- July 2024](https://scholar.colorado.edu/concern/datasets/fx719p11c)
+241,840,Usa Hawaii,United States,Americas,North America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r06p),[Nov 2000-Dec 2024](https://scholar.colorado.edu/concern/datasets/sn00b078q)
+242,840,Usa Lower48,United States,Americas,North America,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/8336h304x),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0g354g88p)
+243,850,United States Virgin Islands,Virgin Islands,Americas,Carribean,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/pv63g214m)
+244,854,Burkina Faso,Burkina Faso,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/9g54xj875),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/x633f2869)
+245,858,Uruguay,Uruguay,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/q524jq130),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/q237ht604)
+246,860,Uzbekistan,Uzbekistan,Asia,Central Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/47429b07v),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/ff365704w)
+247,862,Venezuela,Venezuela,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7m01bm95m),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/c534fq76h)
+248,876,Wallis And Futuna,Wallis And Futuna,Oceania,Polynesia,3.0,8.0,,
+249,882,Samoa,Samoa,Oceania,Polynesia,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/kw52j9917)
+250,887,Yemen,Yemen,Asia,West Asia,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/5d86p139h),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qb98mg91w)
+251,894,Zambia,Zambia,Africa,East Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/6108vc441),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/qv33rz46c)
