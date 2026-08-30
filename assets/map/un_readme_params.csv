@@ -32,7 +32,7 @@
 30,72,Botswana,Botswana,Africa,South Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/b8515p69g),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/nv9354593)
 31,76,Brazil,Brazil,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/05741s90q),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/b8515q25m)
 32,84,Belize,Belize,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/q524jq679) 
-33,86,British Indian Ocean Territory,British Indian Ocean Territory,0,Territory,3.0,8.0,,
+33,86,British Indian Ocean Territory,British Indian Ocean Territory,Antarctica,Territory,3.0,8.0,,
 34,90,Solomon Islands,Solomon Islands,Oceania,Melanesia,3.0,8.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6t053h70v)
 35,92,British Virgin Islands,Virgin Islands,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/jq085m540)
 36,96,Brunei,Brunei Darussalam,Asia,South-East Asia,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/mp48sd92p),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/0v8382100)
@@ -50,7 +50,7 @@
 48,148,Chad,Chad,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/707958762),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/s4655j45w)
 49,152,Chile,Chile,Americas,South America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/qr46r2052),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/g732db604)
 50,156,China,China,Asia,East Asia,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/qz20st810),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/tt44pp77n)
-51,158,Taiwan,Taiwan,0,Territory,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/df65v9276),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6t053h714)
+51,158,Taiwan,Taiwan,Antarctica,Territory,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/df65v9276),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/6t053h714)
 52,170,Colombia,Colombia,Americas,South America,1.0,2.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/mp48sd91d),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/8c97ks03f)
 53,174,Comoros,Comoros,Africa,East Africa,1.0,1.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/s7526f22t)
 54,178,Republic Of The Congo,Congo,Africa,Middle Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/nk322f305),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/t435gf783)
@@ -73,7 +73,7 @@
 71,233,Estonia,Estonia,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/7h149r07z),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/73666649m)
 72,234,Faroe Islands,Faroe Islands,Europe,North Europe,5.0,11.0,,
 73,238,Falkland Islands,Falkland Islands (Malvinas),Americas,South America,3.0,8.0,,
-74,239,South Georgia And The Islands,South Georgia And The South Sandwich Islands,0,Territory,3.0,8.0,,
+74,239,South Georgia And The Islands,South Georgia And The South Sandwich Islands,Antarctica,Territory,3.0,8.0,,
 75,242,Fiji,Fiji,Oceania,Melanesia,3.0,8.0,,
 76,246,Finland,Finland,Europe,North Europe,5.0,11.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/6395w836j),[Nov 2000-July  2024](https://scholar.colorado.edu/concern/datasets/pk02cc33v)
 77,248,Aland,Åland Islands,Europe,North Europe,5.0,11.0,,[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5138jg697)
@@ -98,7 +98,7 @@
 96,324,Guinea,Guinea,Africa,West Africa,1.0,1.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/05741s910),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/02870x464)
 97,328,Guyana,Guyana,Americas,South America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/qv33rx839),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/5h73pz00k)
 98,332,Haiti,Haiti,Americas,Carribean,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/x633f230f),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/707959237)
-99,334,Heard Island And Mcdonald Islands,Heard Island And Mcdonald Islands,0,Territory,3.0,8.0,,
+99,334,Heard Island And Mcdonald Islands,Heard Island And Mcdonald Islands,Antarctica,Territory,3.0,8.0,,
 100,336,Vatican,Holy See (Vatican City State),Europe,South Europe,5.0,11.0,,
 101,340,Honduras,Honduras,Americas,Central America,3.0,8.0,[2001-2021](https://scholar.colorado.edu/concern/datasets/vd66w1102),[Nov 2000-July 2024](https://scholar.colorado.edu/concern/datasets/n296x082p)
 102,344,Hong Kong,Hong Kong,Asia,East Asia,5.0,11.0,,

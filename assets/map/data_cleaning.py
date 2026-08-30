@@ -139,7 +139,7 @@ mapping_sr = dict(zip(world_geo["UN"], world_geo["SUBREGION"]))
 
 # For long name regions
 region_dict = {
-    10:"Antarctica", 
+    0:"Antarctica", 
     2:"Africa", 
     9: "Oceania", 
     19: "Americas", 

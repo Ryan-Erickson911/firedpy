@@ -28,15 +28,6 @@ const NA_ECO_COLORS = {
     "WATER": "#4F81BD"
 };
 
-function na_eco_style({ properties: p }) {
-    return {
-        color: "#333",
-        weight: 1,
-        fillColor: NA_ECO_COLORS[p.NA_L1NAME] || "#464646",
-        fillOpacity: 0.7
-    };
-};
-
 // WWF
 const BIOME_COLORS = {
     1:"#1B9E77", 2:"#66A61E", 3:"#4E7F18", 4:"#A6D854",
@@ -44,14 +35,7 @@ const BIOME_COLORS = {
     9:"#E5C100", 10:"#B3A000", 11:"#A6A6A6", 12:"#E7298A",
     13:"#E6CBA8", 14:"#8C510A", 98:"#4F81BD", 99:"#FFFFFF"
 };
-function wwf_eco_style({ properties: p }) {
-    return {
-        color: "#333",
-        weight: 1,
-        fillColor: BIOME_COLORS[p.BIOME] || "#464646",
-        fillOpacity: 0.7
-    };
-};
+
 
 // Firedpy Colors
 const COUNTRY_COLORS = ["#464646", "#F4E6FF", "#CA8AFF", "#7300D1", "#410075"];
@@ -60,7 +44,38 @@ const COUNTRY_COLORS = ["#464646", "#F4E6FF", "#CA8AFF", "#7300D1", "#410075"];
 const base_osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap',
     minZoom: 2,
-    maxZoom: 9
+    maxZoom: 7,
+    opacity: 0.6
+});
+
+const base_hillshade = L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri',
+});
+
+const wwf_ecoLayer = L.geoPackageFeatureLayer([], {
+    geoPackageUrl: "../../firedpy/data/world_eco_regions/wwf_terr_ecos.gpkg",
+    layerName: 'wwf_terr_ecos',
+    style: function(feature) {
+        return {
+            color: "#333",
+            weight: 1,
+            fillColor: BIOME_COLORS[feature.properties.BIOME] || "#464646",
+            fillOpacity: 0.7
+        };
+    },
+});
+
+const na3_ecoLayer = L.geoPackageFeatureLayer([], {
+    geoPackageUrl: "../../firedpy/data/na_eco/NA_CEC_Eco_Level3.gpkg",
+    layerName: 'NA_CEC_Eco_Level3',
+    style: function(feature) {
+        return {
+            color: "#333",
+            weight: 1,
+            fillColor: NA_ECO_COLORS[feature.properties.NA_L1NAME] || "#464646",
+            fillOpacity: 0.7
+        };
+    },
 });
 
 const southWest = L.latLng(90, -180);
@@ -72,8 +87,60 @@ const map = L.map('map', {
     maxBounds: bounds,
     zoom: 3,
     zoomControl: false,
-    layers: [base_osm],
+    layers: [base_hillshade, base_osm],
 });
+
+const legendControl = L.control({ position: 'bottomright' });
+legendControl.onAdd = function () {
+    const div = L.DomUtil.create('div', 'legend-panel');
+    div.id = 'map-legend';
+    div.innerHTML = '<div class="legend-header">Eco Layer Legend</div>';
+    return div;
+};
+legendControl.addTo(map);
+
+function buildLegendRow(label, color) {
+    return `
+        <div class="legend-row">
+            <span class="legend-swatch" style="background:${color};"></span>
+            <span>${label}</span>
+        </div>
+    `;
+}
+
+function lockLegendScroll() {
+    const legend = document.getElementById('map-legend');
+    if (!legend) return;
+
+    ['wheel', 'mousewheel', 'touchmove'].forEach(eventName => {
+        legend.addEventListener(eventName, (event) => event.stopPropagation(), { passive: true });
+    });
+}
+
+function renderLegend() {
+    const legend = document.getElementById('map-legend');
+    if (!legend) return;
+
+    const colorEntries = [];
+
+    if (map.hasLayer(na3_ecoLayer)) {
+        colorEntries.push(...Object.entries(NA_ECO_COLORS).map(([label, color]) => buildLegendRow(label, color)));
+    }
+
+    if (map.hasLayer(wwf_ecoLayer)) {
+        colorEntries.push(...Object.entries(BIOME_COLORS).map(([key, color]) => buildLegendRow(`Biome ${key}`, color)));
+    }
+
+    const header = '<div class="legend-header">Eco Layer Legend</div>';
+
+    if (!colorEntries.length) {
+        legend.innerHTML = `${header}<div class="legend-empty">No eco layer selected</div>`;
+        return;
+    }
+
+    legend.innerHTML = `${header}${colorEntries.join('')}`;
+    lockLegendScroll();
+}
 
 const modis_tiles_layer = new L.GeoJSON.AJAX("map/modis_tiles.geojson", {
     style: {
@@ -92,32 +159,6 @@ const modis_tiles_layer = new L.GeoJSON.AJAX("map/modis_tiles.geojson", {
     }
 }).addTo(map);
 
-const wwf_ecoLayer = new L.GeoJSON.AJAX("map/wwf_ecos.geojson", {
-    style: wwf_eco_style,
-});
-
-const na3_ecoLayer = new L.GeoJSON.AJAX("map/na_eco_lvl_3.geojson", {
-    style: na_eco_style,
-});
-
-
-const baseMaps = {
-    "Base OSM": base_osm,
-}
-
-const overlayMaps = {
-    "Modis Tiles": modis_tiles_layer,
-    "WWF Eco Regions": wwf_ecoLayer,
-    "NA LVL 3 Eco Regions": na3_ecoLayer
-};
-
-// Layer Control
-const overlayOrder = [
-    modis_tiles_layer,
-    wwf_ecoLayer,
-    na3_ecoLayer
-];
-
 // Function to reorder overlays
 function reorderOverlays() {
     overlayOrder.forEach(layer => {
@@ -128,32 +169,31 @@ function reorderOverlays() {
 }
 
 function buildDropdowns(allRows, allHeaders, filterText = "", unCode = null) {
-
     const filter = filterText.trim().toLowerCase();
-    const unFilter = unCode === null || unCode === undefined
-        ? ""
-        : String(unCode).trim();
+    const unFilter = unCode === null || unCode === undefined ? "" : String(unCode).trim();
     const tree = {};
     let firstMatch;
-    rows = allRows.slice(1).map(row => row.split(',').map(value => value.trim()));
+    const rows = allRows.slice(1).map(row => row.split(',').map(value => value.trim()));
+
     const regionCol = allHeaders.indexOf('REGION');
     const subregionCol = allHeaders.indexOf('SUBREGION');
     const countryCol = allHeaders.indexOf('Country');
     const namesCol = allHeaders.indexOf('country_name');
-    const temporal_col = allHeaders.indexOf('temporal');
-    const spatial_col = allHeaders.indexOf('spatial');
-    const version1_col = allHeaders.indexOf('V2022');
-    const version2_col = allHeaders.indexOf('V2024S1T5');
+    const temporalCol = allHeaders.indexOf('temporal');
+    const spatialCol = allHeaders.indexOf('spatial');
+    const version1Col = allHeaders.indexOf('V2022');
+    const version2Col = allHeaders.indexOf('V2024S1T5');
     const unIndex = allHeaders.indexOf('UN');
+
     rows.forEach(row => {
-        const region    = row[regionCol];
+        const region = row[regionCol];
         const subregion = row[subregionCol];
-        const country   = row[countryCol];
-        const name   = row[namesCol];
-        const sparam = row[spatial_col];
-        const tparam = row[temporal_col];
-        const dataset1  = row[version1_col];
-        const dataset2  = row[version2_col];
+        const country = row[countryCol];
+        const name = row[namesCol];
+        const sparam = row[spatialCol];
+        const tparam = row[temporalCol];
+        const dataset1 = row[version1Col];
+        const dataset2 = row[version2Col];
         const rowUnCode = row[unIndex];
         const datasets = [
             { label: "V2022", value: dataset1 ?? "NA" },
@@ -166,19 +206,16 @@ function buildDropdowns(allRows, allHeaders, filterText = "", unCode = null) {
         const searchable = `${region} ${subregion} ${country} ${name}`.toLowerCase();
         if (!searchable.includes(filter)) return;
 
-        if (!firstMatch) {
-            firstMatch = { region, subregion, country, name };
-        }
+        if (!firstMatch) firstMatch = { region, subregion, country, name };
 
         if (!tree[region]) tree[region] = {};
         if (!tree[region][subregion]) tree[region][subregion] = {};
-        if (!tree[region][subregion][country]) {
-            tree[region][subregion][country] = [];
-        }
+        if (!tree[region][subregion][country]) tree[region][subregion][country] = [];
+
         tree[region][subregion][country].push({ name, sparam, tparam, datasets });
     });
+
     populateRegion(tree, filter || unFilter ? firstMatch : null);
-    
 }
 
 function populateRegion(tree, selected = null) {
@@ -187,7 +224,10 @@ function populateRegion(tree, selected = null) {
     countrySelect.innerHTML = `<option value="">Select Country</option>`;
     datasetSelect.innerHTML = "";
 
-    Object.keys(tree).sort().forEach(region => {regionSelect.innerHTML += `<option value="${region}">${region}</option>`;});
+    Object.keys(tree).sort().forEach(region => {
+        regionSelect.innerHTML += `<option value="${region}">${region}</option>`;
+    });
+
     regionSelect.onchange = () => populateSubregion(tree, regionSelect.value, selected);
 
     if (selected) {
@@ -200,7 +240,10 @@ function populateSubregion(tree, region, selected = null) {
     subregionSelect.innerHTML = `<option value="Select Subregion">Select Subregion</option>`;
 
     if (!region || !tree[region]) return;
-    Object.keys(tree[region]).sort().forEach(sr => {subregionSelect.innerHTML += `<option value="${sr}">${sr}</option>`;});
+
+    Object.keys(tree[region]).sort().forEach(sr => {
+        subregionSelect.innerHTML += `<option value="${sr}">${sr}</option>`;
+    });
 
     subregionSelect.onchange = () => populateCountry(tree, region, subregionSelect.value, selected);
 
@@ -210,17 +253,43 @@ function populateSubregion(tree, region, selected = null) {
     }
 }
 
+function zoomToCountry(countryName) {
+    const layer = countryLayerIndex[countryName];
+    if (!layer) return;
+
+    if (layer.getBounds) {
+        const bounds = layer.getBounds();
+        if (bounds && bounds.isValid && bounds.isValid()) {
+            map.fitBounds(bounds, {maxZoom: 5});
+            return;
+        }
+    }
+
+    const p = layer.feature?.properties;
+    if (p && p.LAT !== undefined && p.LON !== undefined) {
+        map.setView([p.LAT, p.LON], 5);
+    }
+}
+
 function populateCountry(tree, region, subregion, selected = null) {
     countrySelect.innerHTML = `<option value="">Select Country</option>`;
 
     if (!subregion || !tree[region]?.[subregion]) return;
-    Object.keys(tree[region][subregion]).sort().forEach(c => {countrySelect.innerHTML += `<option value="${c}">${c}</option>`;});
 
-    countrySelect.onchange = () => populateDatasets(tree, region, subregion, countrySelect.value);
+    Object.keys(tree[region][subregion]).sort().forEach(country => {
+        countrySelect.innerHTML += `<option value="${country}">${country}</option>`;
+    });
+
+    countrySelect.onchange = () => {
+        const selectedCountry = countrySelect.value;
+        populateDatasets(tree, region, subregion, selectedCountry);
+        zoomToCountry(selectedCountry);
+    };
 
     if (selected && selected.region === region && selected.subregion === subregion) {
         countrySelect.value = selected.country;
         populateDatasets(tree, region, subregion, selected.country);
+        zoomToCountry(selected.country);
     }
 }
 
@@ -228,6 +297,7 @@ function populateDatasets(tree, region, subregion, country) {
     datasetSelect.innerHTML = "";
 
     if (!country) return;
+
     tree[region][subregion][country].forEach(({ name, sparam, tparam, datasets }) => {
         const entries = datasets.map(({ label, value }) => {
             if (!value) return "";
@@ -238,6 +308,7 @@ function populateDatasets(tree, region, subregion, country) {
                 </div>
             `;
         }).join("");
+
         datasetSelect.insertAdjacentHTML("beforeend", `
             <div class="dataset-entry">
                 <h3 style="margin: 0 0 0 0"><strong style="color: black">${name}:</strong></h3>
@@ -245,8 +316,7 @@ function populateDatasets(tree, region, subregion, country) {
                 <div style="text-align: left">V2025: -sp ${sparam || "NA"} -tp ${tparam || "NA"}</div>
             </div>
         `);
-    }); 
-
+    });
 }
 // finish color hover by Region (Popup region background by subregion?)
 function countryStyle({ properties: p }) {
@@ -254,7 +324,7 @@ function countryStyle({ properties: p }) {
     return {
         color: "#535353",
         weight: 1,
-        fillColor: COUNTRY_COLORS[Math.min(count, 4)],
+        fillColor: COUNTRY_COLORS[Math.min(count, 5)],
         fillOpacity: 0.85
     };
 }
@@ -310,9 +380,17 @@ fetch('map/un_readme_params.csv')
                 const p = feature.properties;
                 countryLayerIndex[p.NAME] = layer;
                 attachHover(layer);
-                layer.on("click", () => {
-                    map.setView([p.LAT, p.LON], maxZoom=5);
-                    layer.openPopup(p.NAME);
+                const popupHtml = `
+                    <div id="popup">
+                        <p>
+                            <center>${p.NAME}</center>
+                        </p>
+                    </div>
+                `;
+                layer.bindPopup(popupHtml);
+                layer.on("click", (event) => {
+                    const clickLatLng = event.latlng || [p.LAT, p.LON];
+                    layer.bindPopup(popupHtml).openPopup(clickLatLng);
                     buildDropdowns(rows, headers, "", p.UN);
                 })}  
         }).addTo(map);
@@ -355,18 +433,68 @@ function makeLink(md) {
 };
 
 // Final map settings and layer prio
+const baseMaps = {};
+
+const overlayMaps = {
+    "Modis Tiles": modis_tiles_layer,
+    "WWF Eco Regions": wwf_ecoLayer,
+    "NA LVL 3 Eco Regions": na3_ecoLayer
+};
+
+function syncLayerControlState() {
+    if (layerControl && typeof layerControl._update === 'function') {
+        layerControl._update();
+    }
+}
+
+function refreshEcoLegend() {
+    renderLegend();
+    syncLayerControlState();
+}
+
+function enforceSingleEcoLayer(activeLayer) {
+    if (!activeLayer) return;
+
+    if (activeLayer === wwf_ecoLayer && map.hasLayer(na3_ecoLayer)) {
+        map.removeLayer(na3_ecoLayer);
+    }
+
+    if (activeLayer === na3_ecoLayer && map.hasLayer(wwf_ecoLayer)) {
+        map.removeLayer(wwf_ecoLayer);
+    }
+
+    refreshEcoLegend();
+}
+
+// Layer Control
+const overlayOrder = [
+    modis_tiles_layer,
+    wwf_ecoLayer,
+    na3_ecoLayer
+];
 
 const layerControl = L.control.layers(baseMaps,overlayMaps).addTo(map);
 L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-map.on('overlayadd', reorderOverlays);
-map.on('overlayremove', reorderOverlays);
+function handleOverlayChange(event) {
+    if (event && event.type === 'overlayadd' && (event.layer === wwf_ecoLayer || event.layer === na3_ecoLayer)) {
+        enforceSingleEcoLayer(event.layer);
+        return;
+    }
+
+    reorderOverlays();
+    refreshEcoLegend();
+}
+
+map.on('overlayadd', handleOverlayChange);
+map.on('overlayremove', handleOverlayChange);
 reorderOverlays();
+renderLegend();
 
 const hideWwfAtZoom = 2;
 
 function updateWwfVisibility() {
-    if (map.getZoom() == hideWwfAtZoom) {
+    if (map.getZoom() <= hideWwfAtZoom) {
         map.removeLayer(modis_tiles_layer);
     } else if (!map.hasLayer(modis_tiles_layer)) {
         map.addLayer(modis_tiles_layer);
