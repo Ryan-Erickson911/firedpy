@@ -103,13 +103,13 @@ def assign_UN(df,col,keep=None, name=None):
 
 # Data
 # output paths
-world_boundaries_output_path = "assets/map/countries_with_params.geojson" 
-final_output_path = "assets/map/un_readme_params.csv"
+world_boundaries_output_path = "docs/map/countries_with_params.geojson" 
+final_output_path = "docs/map/un_readme_params.csv"
 
 # Original files - fixed shapes in wourld boundaries (Sudan/South Sudan/Kosovo), adam's -sp -tp sheet, ryan's readme.csv.
-world_boundaries = "assets/map/processed_world_boundaries_RE.geojson" # original => world.gpkg file
+world_boundaries = "docs/map/processed_world_boundaries_RE.geojson" # original => world.gpkg file
 csv_path = "firedpy/data/parameters_for_individual_countries.csv" # params csv 
-readme = "assets/map/readme_links.csv" # readme links
+readme = "docs/map/readme_links.csv" # readme links
 
 # read data
 new_params = pd.read_csv(csv_path) 
