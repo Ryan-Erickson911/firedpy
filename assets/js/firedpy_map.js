@@ -53,7 +53,7 @@ const base_hillshade = L.tileLayer('https://services.arcgisonline.com/ArcGIS/res
 });
 
 const wwf_ecoLayer = L.geoPackageFeatureLayer([], {
-    geoPackageUrl: "../firedpy/data/world_eco_regions/wwf_terr_ecos.gpkg",
+    geoPackageUrl: "data/world_eco_regions/wwf_terr_ecos.gpkg",
     layerName: 'wwf_terr_ecos',
     style: function(feature) {
         return {
@@ -66,7 +66,7 @@ const wwf_ecoLayer = L.geoPackageFeatureLayer([], {
 });
 
 const na3_ecoLayer = L.geoPackageFeatureLayer([], {
-    geoPackageUrl: "../firedpy/data/na_eco/NA_CEC_Eco_Level3.gpkg",
+    geoPackageUrl: "data/na_eco/NA_CEC_Eco_Level3.gpkg",
     layerName: 'NA_CEC_Eco_Level3',
     style: function(feature) {
         return {
