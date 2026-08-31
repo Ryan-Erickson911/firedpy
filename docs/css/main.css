@@ -496,7 +496,7 @@ input, select, textarea {
 
 	#header {
 		background-color: #4686a0;
-		background-image: url("images/overlay2.png"), linear-gradient(45deg, #30a64e 15%, #0a42bc 95%);
+		background-image: url("imgs/overlay2.png"), linear-gradient(45deg, #30a64e 15%, #0a42bc 95%);
 		background-size: auto, cover;
 		color: rgba(255, 255, 255, 0.75);
 		overflow: hidden;
@@ -623,7 +623,7 @@ input, select, textarea {
 
 	#footer {
 		background-color: #4686a0;
-		background-image: url("images/overlay2.png"), linear-gradient(45deg, #0a42bc, #1c7288 25%, #30a64e 95%);
+		background-image: url("imgs/overlay2.png"), linear-gradient(45deg, #0a42bc, #1c7288 25%, #30a64e 95%);
 		color: rgba(255, 255, 255, 0.75);
 		padding: 6em 0;
 		text-align: center;
@@ -3581,7 +3581,7 @@ input, select, textarea {
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed;
-		background-image: url("images/overlay2.png"), linear-gradient(45deg, #30a64e 15%, #0a42bc 95%);
+		background-image: url("imgs/overlay2.png"), linear-gradient(45deg, #30a64e 15%, #0a42bc 95%);
 		background-position: top left,						center center;
 		background-size: auto,							cover;
 		overflow: hidden;
@@ -3763,7 +3763,7 @@ input, select, textarea {
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed;
-		background-image: url("images/overlay2.png"), linear-gradient(45deg, #0a42bc, #1c7288 25%, #30a64e 95%);
+		background-image: url("imgs/overlay2.png"), linear-gradient(45deg, #0a42bc, #1c7288 25%, #30a64e 95%);
 		background-position: top left,						center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
