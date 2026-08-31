@@ -53,8 +53,8 @@ const base_hillshade = L.tileLayer('https://services.arcgisonline.com/ArcGIS/res
 });
 
 const WIN_GHP = window.location.hostname.includes("github.io")
-    ? "https://ryan-erickson911.github.io/firedpy"
-    : "";
+    ? "https://raw.githubusercontent.com/Ryan-Erickson911/firedpy/main/firedpy/"
+    : "../firedpy";
 
 const wwf_ecoLayer = L.geoPackageFeatureLayer([], {
     geoPackageUrl: `${WIN_GHP}/data/world_eco_regions/wwf_terr_ecos.gpkg`,
@@ -68,9 +68,9 @@ const wwf_ecoLayer = L.geoPackageFeatureLayer([], {
         };
     },
 });
-
+console.log(WIN_GHP)
 const na3_ecoLayer = L.geoPackageFeatureLayer([], {
-    geoPackageUrl: `${WIN_GHP}/data/world_eco_regions/wwf_terr_ecos.gpkg`,
+    geoPackageUrl: `${WIN_GHP}/data/na_eco/NA_CEC_Eco_Level3.gpkg`,
     layerName: 'NA_CEC_Eco_Level3',
     style: function(feature) {
         return {
