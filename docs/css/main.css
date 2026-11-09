@@ -172,8 +172,6 @@ input, select, textarea {
 	#sidebar {
 		position: absolute;
 		left: 0;
-		top: 10%;
-		bottom: 10%;
 		color: black;
 		width: 275px;
 		background: #f8f8f8d5;
@@ -298,7 +296,6 @@ input, select, textarea {
 	}
 
 	a {
-		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -481,26 +478,78 @@ input, select, textarea {
 		justify-content: center;
 		margin-left: 0;
 	}
-
+	
+	/* Top Header */
 	#scrollheader {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem clamp(0.25rem, 1vw, 0.75rem);
 		background: #fff;
+		box-sizing: border-box;
 		color: rgb(150, 150, 150);
-		padding: 5px 0;
 		position: sticky;
-		text-align: left;
-		text-indent: 15%;
+		padding: 0 clamp(0.75rem, 3vw, 2rem);
 		top: 0;
+		transition: 0.5s ease;
 		width: 100%;
 		z-index: 999999;
 	}
 
+	#scrollheader logo {
+		display: flex;
+		margin-right: auto;
+	}
+
+	#scrollheader logo img {
+		display: block;
+		height: auto;
+		max-width: 100%;
+	}
+
+	#scrollheader li {
+		display: flex;
+	}
+
+	#header p.sticky-note {
+		position: sticky;
+		top: var(--scrollheader-height, 0px);
+		z-index: 999999;
+	}
+	@media screen and (max-width: 736px) {
+		#scrollheader logo {
+			flex-basis: 100%;
+			justify-content: center;
+			margin-right: 0;
+		}
+
+		#scrollheader li {
+			flex: 1 1 auto;
+			justify-content: center;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		#scrollheader li {
+			flex-basis: calc(50% - 0.25rem);
+		}
+
+		#scrollheader .button {
+			box-sizing: border-box;
+			padding: 0 0.5em;
+			width: 100%;
+		}
+	}
+
 	#header {
 		background-color: #4686a0;
-		background-image: url("imgs/overlay2.png"), linear-gradient(45deg, #30a64e 15%, #0a42bc 95%);
-		background-size: auto, cover;
 		color: rgba(255, 255, 255, 0.75);
-		overflow: hidden;
-		padding: 1.5% 0 1%;
+		background-attachment: fixed,							fixed;
+		background-image: url("imgs/overlay2.png"), linear-gradient(45deg, #30a64e 15%, #0a42bc 95%);
+		background-position: top left,						center center;
+		background-size: auto,							cover;
+		overflow: clip;
+		padding: 1.5% 0 1% 0;
 		position: relative;
 		text-align: center;
 	}
@@ -734,10 +783,6 @@ input, select, textarea {
 	}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -3344,14 +3389,10 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
+		/* box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5); */
 		color: #555 !important;
 		cursor: pointer;
 		display: inline-block;
@@ -3473,7 +3514,7 @@ input, select, textarea {
 		}
 
 		.main.style2 {
-			background-color: #333;
+			background-color: #fff;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed;
 			background-image: url("../imgs/forest.png");
@@ -3485,7 +3526,7 @@ input, select, textarea {
 			}
 
 				.main.style2 a:hover {
-					color: #ffffff;
+					color: #96a0f8;
 				}
 
 			.main.style2 h1, .main.style2 h2, .main.style2 h3, .main.style2 h4, .main.style2 h5, .main.style2 h6, .main.style2 strong, .main.style2 b {
@@ -3559,35 +3600,6 @@ input, select, textarea {
 			.main.style2 .icon.major {
 				color: #ffffff;
 			}
-
-/* Top Header */
-	#scrollheader{
-		position: sticky;
-		top: 0px;
-		text-align: Left;
-		text-indent: 15%;
-		width: 100%;
-		background: #ffffffff;
-		color: rgb(150, 150, 150);
-		padding-top: 5px;
-		padding-bottom: 5px;
-		z-index: 999999;
-		transition: 0.5s ease;
-	}
-
-/* Header */
-	#header {
-		padding: 1.5% 0 1% 0 ;
-		background-color: #4686a0;
-		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed;
-		background-image: url("imgs/overlay2.png"), linear-gradient(45deg, #30a64e 15%, #0a42bc 95%);
-		background-position: top left,						center center;
-		background-size: auto,							cover;
-		overflow: hidden;
-		position: relative;
-		text-align: center;
-	}
 
 		#header a {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
@@ -3691,75 +3703,11 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
-		#header .inner {
-			-moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
-			-webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
-			-ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
-			transition: transform 1.5s ease, opacity 2s ease;
-			-moz-transition-delay: 0.25s;
-			-webkit-transition-delay: 0.25s;
-			-ms-transition-delay: 0.25s;
-			transition-delay: 0.25s;
-			-moz-transform: scale(1);
-			-webkit-transform: scale(1);
-			-ms-transform: scale(1);
-			transform: scale(1);
-			opacity: 1;
-			position: relative;
-			z-index: 1;
-		}
-
-			#header .inner .actions {
-				-moz-transition: -moz-transform 1.25s ease;
-				-webkit-transition: -webkit-transform 1.25s ease;
-				-ms-transition: -ms-transform 1.25s ease;
-				transition: transform 1.25s ease;
-				-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;
-				-moz-transform: translateY(0);
-				-webkit-transform: translateY(0);
-				-ms-transform: translateY(0);
-				transform: translateY(0);
-				opacity: 1;
-			}
-
-		#header:after {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
-			content: '';
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-	body.is-preload #header .inner {
-		-moz-transform: scale(1.05);
-		-webkit-transform: scale(1.05);
-		-ms-transform: scale(1.05);
-		transform: scale(1.05);
-		opacity: 0;
-	}
-
-		body.is-preload #header .inner .actions {
-			-moz-transform: translateY(30em);
-			-webkit-transform: translateY(30em);
-			-ms-transform: translateY(30em);
-			transform: translateY(30em);
-			opacity: 0;
-		}
 
 /* Footer */
 
 	#footer {
-		padding: 6em 0 6em 0 ;
+		padding: 1em 0 1em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed;

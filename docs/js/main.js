@@ -1,7 +1,20 @@
 (function($) {
 
 	var	$window = $(window),
-		$body = $('body');
+		$body = $('body'),
+		$scrollHeader = $('#scrollheader');
+
+	function updateScrollHeaderHeight() {
+		if ($scrollHeader.length) {
+			document.documentElement.style.setProperty(
+				'--scrollheader-height',
+				$scrollHeader.outerHeight() + 'px'
+			);
+		}
+	}
+
+	updateScrollHeaderHeight();
+	$window.on('load resize', updateScrollHeaderHeight);
 
 	// Breakpoints.
 		breakpoints({

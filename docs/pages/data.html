@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<title>Firedpy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js"></script>
+		<script src="https://unpkg.com/@ngageoint/leaflet-geopackage@4.1.3/dist/leaflet-geopackage.min.js"></script>
+	</head>
+	<body class="is-preload">
+		<!-- Top Header -->
+		<div id="top"></div>
+		<div id="scrollheader">
+			<logo><img src="../imgs/earthlab_homepage.png" style="width: 150px;"/><a href="https://earthlab.colorado.edu"></a></logo>	
+			<li><a href="../index.html" class="button">Home</a></li>
+			<li><a href="#two" class="button">Data</a></li>
+			<li><a href="documentation.html" class="button">Documentation</a></li>
+			<li><a href="authors.html" class="button" style="transition: 0.5s ease;">Authors</a></li>
+			<li><a href="https://cires.colorado.edu/" class="button" target='_blank'>CIRES</a></li>
+		</div>
+		<!-- Header -->
+		<section id="header">
+			<div class="container">
+				<h1><strong>Firedpy</strong> - A MODIS 6 Python CLI for Burn Data and Statistics</h1>
+			</div>
+		</section>
+		<section class="main style2">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-12">
+						<header class="major">
+							<h1 style="margin:0;">Proccessed Countries</h1>
+						</header>
+						<p style="margin: 0 0 0.5em 0;">Already-created products are displayed below. They are housed in the CU Scholar data repository in the <a href="https://scholar.colorado.edu/collections/pz50gx05h" style="border-bottom: dotted 1px #666;">Earth Lab Data collection</a>, or <a href="https://scholar.colorado.edu/catalog?f%5Bacademic_affiliation_sim%5D%5B%5D=Earth+Lab&locale=en" style="border-bottom: dotted 1px #666;">here</a>.
+							All of the created products have an event-level shapefile in .gpkg and .shp formats. Most countries also have the daily-level shapefile for the V2024 products, but for the V2022 products these were not created for most countries in Africa and Asia due to computational restrictions.<br><br>Click on, or search for, your favorite country to view avaliable fire perimeter datasets:</p>
+					</div>
+				</div>
+			</div>
+			<center><div id="map-layout"><div id="map"></div>
+				<div id="sidebar" >
+					<h2 style="color: black; text-align: center; margin:0">Avaliable Data</h2>
+					<div class="legend">
+						<div class="legend-item">
+							<span class="square sq1"></span>1
+						</div>
+						<div class="legend-item">
+							<span class="square sq2"></span>2
+						</div>
+						<div class="legend-item">
+							<span class="square sq3"></span>3
+						</div>
+						<div class="legend-item">
+							<span class="square sq4"></span>4+
+						</div>
+					</div>
+					<input id="searchBox" type="text" placeholder="Search for a country..." style="width:100%; padding:6px; margin-bottom:8px; height:30px; color:black">
+					<select id="regionSelect"></select>
+					<select id="subregionSelect"></select>
+					<select id="countrySelect"></select>
+					<div id="datasetSelect"></div>
+					<button id="resetButton" type="button">Reset</button>
+				</div>
+			</div></center>
+			<script src="../js/firedpy_map.js"></script>
+		</section>
+		<section id="footer">
+			<ul class="copyright">
+				<li>&copy; EarthLab: A Part of CIRIES at the University of Colorado, Boulder</li><li>Design: <a href="www.rerickson.me">R. Erickson</a></li>
+			</ul>
+		</section>
+		<a href="#top" class="to-top">↑</a>
+		<!-- Scripts -->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.scrolly.min.js"></script>
+		<script src="../js/browser.min.js"></script>
+		<script src="../js/breakpoints.min.js"></script>
+		<script src="../js/upbutton.js"></script>
+		<script src="../js/util.js"></script>
+		<script src="../js/main.js"></script>
+	</body>
+</html>

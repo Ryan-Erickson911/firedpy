@@ -52,9 +52,12 @@ const base_hillshade = L.tileLayer('https://services.arcgisonline.com/ArcGIS/res
     attribution: 'Tiles &copy; Esri',
 });
 
+const DOCS_ROOT = new URL("../", document.currentScript.src);
+const MAP_ROOT = new URL("map/", DOCS_ROOT);
+
 const WIN_GHP = window.location.hostname.includes("github.io")
     ? "https://raw.githubusercontent.com/Ryan-Erickson911/firedpy/main/firedpy/"
-    : "../firedpy";
+    : new URL("../firedpy/", DOCS_ROOT).href.replace(/\/$/, "");
 
 const wwf_ecoLayer = L.geoPackageFeatureLayer([], {
     geoPackageUrl: `${WIN_GHP}/data/world_eco_regions/wwf_terr_ecos.gpkg`,
@@ -146,7 +149,7 @@ function renderLegend() {
     lockLegendScroll();
 }
 
-const modis_tiles_layer = new L.GeoJSON.AJAX("map/modis_tiles.geojson", {
+const modis_tiles_layer = new L.GeoJSON.AJAX(new URL("modis_tiles.geojson", MAP_ROOT).href, {
     style: {
         color: "#333",
         weight: 1,
@@ -341,7 +344,7 @@ function hasDatasetValue(value) {
     return value !== undefined && value !== null && value.trim() !== "" && value.trim().toLowerCase() !== "na";
 }
 
-fetch('map/un_readme_params.csv')
+fetch(new URL("un_readme_params.csv", MAP_ROOT))
     .then(response => response.text())
     .then(csvText => {
         const rows = csvText.trim().split(/\r?\n/);
@@ -378,7 +381,7 @@ fetch('map/un_readme_params.csv')
             searchBox.value = "";
             buildDropdowns(rows, headers);
         });
-        firedpyLayer = new L.GeoJSON.AJAX("map/countries_with_params.geojson", {
+        firedpyLayer = new L.GeoJSON.AJAX(new URL("countries_with_params.geojson", MAP_ROOT).href, {
             style: countryStyle,
             onEachFeature: function (feature, layer) {
                 const p = feature.properties;
