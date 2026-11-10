@@ -5,7 +5,6 @@
 		<title>Firedpy</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 		<link rel="stylesheet" href="../css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -25,28 +24,44 @@
 				<h1><strong>Firedpy</strong> - A MODIS 6 Python CLI for Burn Data and Statistics</h1>
 			</div>
 		</section>
-		<section class="main style1 special" id="four" >
-			<div class="container" style="text-align: left;">
-				<header class="major">
-					<h1>Documentation</h1>
+		<section class="main style1">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-12" style="color: #000;">
+						<header class="major">
+							<h1>Documentation</h1>
+						</header>
+						<p>FIREDpy is currently in active development, and newer versions of the algorithm and data products are shared on an individual basis.</p>
+						<p>All data products generated from unpublished versions of FIREDpy require permission from PI Jennifer K. Balch prior to use in publications, 
+							presentations, or public dissemination. These conversations ensure appropriate acknowledgment of the development team's contributions and 
+							proper context for the algorithm's current capabilities and limitations. Please use the above citation for attributing credit. For data 
+							requests or collaboration inquiries, please contact Nate Hofford (nate.hofford@colorado.edu), University of Colorado Boulder.</p>
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="authors.html#dataagreement">Data Sharing</a></li>
+							<li><a href="installation.html">Installation</a></li>
+							<li><a href="parameters.html">Parameters</a></li>
+							<li><a href="releases.html">Releases and Versions</a></li>
+						</ul>
+						<p>In the current version, memory constraints may limit the extent available for a single model run. Equatorial regions have much more fire
+							activity, and may require much more RAM to process than a normal laptop will have.</p>
+						<p>The algorithm outputs shapefiles of delineated fire events in either .shp or .gpkg format. In 
+							addition to the full event polygons created by default, the user has the option of producing 
+							daily-level perimeters, providing a representation of both final and expanding event perimeters.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main style2">
+			<div class="container">
+				<header class="major" style="text-align: left;">
+					<h2>Have you used FIREDpy?</h2>
 				</header>
-				<p>FIREDpy is currently in active development, and newer versions of the algorithm and data products are shared on an individual basis.</p>
-				<p>All data products generated from unpublished versions of FIREDpy require permission from PI Jennifer K. Balch prior to use in publications, 
-					presentations, or public dissemination. These conversations ensure appropriate acknowledgment of the development team's contributions and 
-					proper context for the algorithm's current capabilities and limitations. Please use the above citation for attributing credit. For data 
-					requests or collaboration inquiries, please contact Nate Hofford (nate.hofford@colorado.edu), University of Colorado Boulder.</p>
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="releases.html">Releases and Versions</a></li>
-					<li><a href="installation.html">Installation</a></li>
-					<li><a href="parameters.html">Parameters</a></li>
-					<li><a href="parameters.html">Updates</a></li>
+				<p style="text-align: left; color: #fff;">The algorithm and derived data products are under active development. Please raise an issue with any suggestions to help us improve firedpy. Or just email Adam and he will be overjoyed to talk about firedpy. If you'd like to contribute, check out the GitHub</p>
+				<ul class="actions special">
+					<li><a href="mailto::admahood@duck.com" class="button wide primary">Contact</a></li>
+					<li><a href="https://github.com/earthlab/firedpy" class="button wide">Contribute</a></li>
 				</ul>
-				<p>In the current version, memory constraints may limit the extent available for a single model run. Equatorial regions have much more fire
-					activity, and may require much more RAM to process than a normal laptop will have.</p>
-				<p>The algorithm outputs shapefiles of delineated fire events in either .shp or .gpkg format. In 
-					addition to the full event polygons created by default, the user has the option of producing 
-					daily-level perimeters, providing a representation of both final and expanding event perimeters.</p>
 			</div>
 		</section>		
 		<section id="footer">

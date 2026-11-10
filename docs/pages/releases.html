@@ -23,54 +23,44 @@
 				<h1><strong>Firedpy</strong> - A MODIS 6 Python CLI for Burn Data and Statistics</h1>
 			</div>
 		</section>
-		<section class="main style1">
-			<div class="container">
-				<div class="row gtr-150">
-					<div class="col-12">
-						<header class="major">
-							<h2>A Python Command-Line Interface for classifying fire events from the Collection 6 MODIS Burned Area Product.</h2>
-						</header>
-						<span class="image fit"><img src="imgs/rim_fire_ca.png" alt="" /></span>
-						<p id="authors">This package uses a space-time window to classify individual burn detections from late 2001 to near-present into discrete events and return both a data table and shapefiles of these events.</p>
-						<header class="major">
-							<h2>Methodological information for FIREDpy 1.0:</h2>
-						</header>
-						<p>Balch, J. K., St. Denis, L. A., Mahood, A. L., Mietkiewicz, N. P., Williams, T. W., McGlinchy J, and Cook, M. C. 2020. FIRED (Fire Events Delineation): An open, flexible algorithm & database of U.S. fire events derived from the MODIS burned area product (2001-19). Remote Sensing, 12(21), 3498; <a href="https://doi.org/10.3390/rs12213498.">https://doi.org/10.3390/rs12213498.</a></p>
-						<header class="major">
-							<h2>Description of the 2000 - 2021 data sets:</h2>
-						</header>
-						<p>Mahood, A.L. Lindrooth, E.J., Cook, M.C. and Balch, J.K. 2022. Country-level fire perimeter datasets (2001-2021). Nature Scientific Data, 9(458). <a href="https://doi.org/10.1038/s41597-022-01572-3">https://doi.org/10.1038/s41597-022-01572-3</a></p>
-						<header class="major">
-							<h2>Methodological information for FIREDpy 2.0, description of 2000-2024 datasets:</h2>
-						</header>
-						<p>Coming soon...</p>
-						<header class="major">
-							<h2>Data Sharing Agreement</h2>
-						</header>
-						<p>FIREDpy is currently in active development, and newer versions of the algorithm and data products are shared on an individual basis. All data products generated from unpublished versions of FIREDpy require permission from PI Jennifer K. Balch prior to use in publications, presentations, or public dissemination. These conversations ensure appropriate acknowledgment of the development team's contributions and proper context for the algorithm's current capabilities and limitations. Please use the above citation for attributing credit. For data requests or collaboration inquiries, please contact <a href="mailto::nate.hofford@colorado.edu" style="border-bottom: dotted 1px #666;">Nate Hofford</a>, University of Colorado Boulder.</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
 		<section id="three" class="main style1 special">
 			<div class="container" style="text-align: left;">
 				<header class="major">
-					<h1>Changes</h1>
+					<h1>Change Log</h1>
 				</header>
-                <p>10/14/2024 FIREDpy V2.0</p>
-                <p>No longer using setup.py. See new instructions below for running it with Docker or installing it locally.</p>
-                <p>Improved fire grouping</p>
-                <p>Improved CLI</p>
-                <p>Access to MODIS burn area product Version 6.1</p>
-                <p>BUG ALERT:</p>
-                <p>Many of the data products created in Fall 2021 may be shifted by a half pixel, and may lack a coordinate reference system.</p>
-                <p>The problem is now fixed, so this will not affect new iterations of firedpy.</p>
-                <p>Sometimes the server that houses the MCD64A1 product used by firedpy is down. If this happens, you just need to wait until it comes back up.</p>
-
-                <p>See the issues tab for more bugs, or to report a new bug!</p>
-				<p>The user is able to specify the spatial and temporal parameters of the window, as well as the spatial and temporal extent, using either a shapefile or a list of MODIS Sinusoidal Projection tile IDs. Countries, continents and US states are included. Any area from the world may be selected. </p>
-				<p>However, in the current version, memory constraints may limit the extent available for a single model run. Equatorial regions have much more fire activity, and may require much more RAM to process than a normal laptop will have.</p>
-				<p>The algorithm outputs shapefiles of delineated fire events in either .shp or .gpkg format. In addition to the full event polygons created by default, and the user has the option of having firedpy produce daily-level perimeters, providing a representation of both final and expanding event perimeters.</p>
+				<p>For a detailed list of citations and workflow, please visit the <a href="authors.html" style="border-bottom: dotted 1px #666;">authors</a> page.</p>
+				<h3>FIREDpy 2.1, 2000-2024 datasets (10/14/2024):</h3>
+                <ul>
+					<li>No longer using setup.py. See new <a href="installation.html" style="border-bottom: dotted 1px #666;">instructions</a> for running it with Docker or installing it locally.</li>
+					<li>Improved fire grouping</li>
+					<li>Improved CLI</li>
+					<li>Access to MODIS burn area product Version 6.1</li>
+				</ul>
+				<h3>FIREDpy 2.0 Description of 2000 - 2021 data sets (6/30/2022):</h3>
+                <ul>
+					<li>Improved efficiency and flexibility of the underlying algorithm</li>
+					<li>Now supports optional land-cover, ecoregion attributes, and fire characteristics like area, duration, and growth.</li>
+				</ul>
+				<h3>FIREDpy 1.0 Description of 2001–2019 data sets: (10/24/2020):</h3>
+				<ul>
+					<li>Created Python CLI for downloading MODIS Collection 6 burned-area data and grouping detected burns into individual fire events.</li>
+					<li>Users can adjust the spatial and temporal thresholds to define events for different regions and research needs.</li>
+					<li>Tracks repeated burns within a year and fires that cross calendar years without splitting them at year-end.</li>
+					<li>Generates fire-perimeter shapefiles and tables with event- or daily-level statistics, including measures of fire size, duration, and spread.</li>
+				</ul>
+			</div>
+		</section>
+		<section id="three" class="main style2 special">
+			<div class="container" style="text-align: left;">
+				<header class="major">
+					<h1>BUG ALERT</h1>
+				</header>
+				<ul>
+					<li>Many of the data products created in Fall 2021 may be shifted by a half pixel, and may lack a coordinate reference system.</li>
+					<li>The problem is now fixed, so this will not affect new iterations of firedpy.</li>
+					<li>Sometimes the server that houses the MCD64A1 product used by firedpy is down. If this happens, you just need to wait until it comes back up.</li>
+					<li>See the issues tab for more bugs, or to report a new bug!</li>
+				</ul>
 			</div>
 		</section>
 		<section id="footer">

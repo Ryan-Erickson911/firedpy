@@ -4,29 +4,162 @@ const subregionSelect = document.getElementById("subregionSelect");
 const countrySelect   = document.getElementById("countrySelect");
 const datasetSelect   = document.getElementById("datasetSelect");
 const searchBox = document.getElementById("searchBox");
+const clearSearchButton = document.getElementById("clearSearchButton");
 const sidebar = document.getElementById("sidebar");
 const resetButton = document.getElementById("resetButton");
+const mapLayout = document.getElementById("map-layout");
+const mapView = document.getElementById("map");
+const tableView = document.getElementById("tableView");
+const tableBody = document.querySelector("#datasetTable tbody");
+const tableStatus = document.getElementById("tableStatus");
+const mapViewButton = document.getElementById("mapViewButton");
+const tableViewButton = document.getElementById("tableViewButton");
+
+function parseCsv(text) {
+    const rows = [];
+    let row = [];
+    let field = "";
+    let quoted = false;
+
+    for (let index = 0; index < text.length; index += 1) {
+        const character = text[index];
+
+        if (quoted) {
+            if (character === '"' && text[index + 1] === '"') {
+                field += '"';
+                index += 1;
+            } else if (character === '"') {
+                quoted = false;
+            } else {
+                field += character;
+            }
+        } else if (character === '"' && field === "") {
+            quoted = true;
+        } else if (character === ",") {
+            row.push(field.trim());
+            field = "";
+        } else if (character === "\n" || character === "\r") {
+            if (character === "\r" && text[index + 1] === "\n") index += 1;
+            row.push(field.trim());
+            rows.push(row);
+            row = [];
+            field = "";
+        } else {
+            field += character;
+        }
+    }
+
+    if (field !== "" || row.length) {
+        row.push(field.trim());
+        rows.push(row);
+    }
+
+    return rows;
+}
+
+function setDataView(view) {
+    const showTable = view === "table";
+    mapLayout.classList.toggle("table-mode", showTable);
+    mapView.hidden = showTable;
+    tableView.hidden = !showTable;
+    mapViewButton.setAttribute("aria-pressed", String(!showTable));
+    tableViewButton.setAttribute("aria-pressed", String(showTable));
+
+    if (showTable) {
+        renderTable();
+    } else {
+        window.setTimeout(() => map.invalidateSize(), 0);
+    }
+}
+
+mapViewButton.addEventListener("click", () => setDataView("map"));
+tableViewButton.addEventListener("click", () => setDataView("table"));
+
+let tableRows = [];
+let tableHeaders = [];
+let userChangedFilters = false;
+let dropdownFiltersChanged = false;
+let savedDropdownSelection = null;
+
+function appendTableCell(row, value) {
+    const cell = document.createElement("td");
+    const match = value.match(/^\[(.*?)\]\((https?:\/\/[^)]+)\)$/);
+
+    if (match) {
+        const link = document.createElement("a");
+        link.href = match[2];
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = match[1];
+        cell.appendChild(link);
+    } else {
+        cell.textContent = value || "-";
+    }
+
+    row.appendChild(cell);
+}
+
+function renderTable() {
+    if (!tableBody || !tableRows.length) return;
+
+    const columns = [
+        { header: "REGION" },
+        { header: "SUBREGION" },
+        { header: "Country" },
+        { header: "V2022" },
+        { header: "V2024S1T5" },
+        { header: "spatial" },
+        { header: "temporal" }
+    ].map(column => ({ ...column, index: tableHeaders.indexOf(column.header) }));
+    const indices = Object.fromEntries(columns.map(column => [column.header, column.index]));
+    const search = searchBox.value.trim().toLowerCase();
+    const region = regionSelect.value;
+    const subregion = subregionSelect.value;
+    const country = countrySelect.value;
+    const applyDropdownFilters = !search || userChangedFilters;
+    const namesIndex = tableHeaders.indexOf("country_name");
+    const filteredRows = tableRows.filter(row => {
+        const rowRegion = row[indices.REGION];
+        const rowSubregion = row[indices.SUBREGION];
+        const rowCountry = row[indices.Country];
+        const countryName = namesIndex < 0 ? "" : row[namesIndex];
+
+        return (!search || `${rowRegion} ${rowSubregion} ${rowCountry} ${countryName}`.toLowerCase().includes(search))
+            && (!applyDropdownFilters || !region || region === "Select Region" || rowRegion === region)
+            && (!applyDropdownFilters || !subregion || subregion === "Select Subregion" || rowSubregion === subregion)
+            && (!applyDropdownFilters || !country || rowCountry === country);
+    });
+
+    tableBody.replaceChildren();
+    filteredRows.forEach(values => {
+        const row = document.createElement("tr");
+        columns.forEach(({ index }) => appendTableCell(row, values[index] || ""));
+        tableBody.appendChild(row);
+    });
+    tableStatus.textContent = `Showing ${filteredRows.length} of ${tableRows.length} datasets`;
+}
 
 // STYLES
 // NA Eco
 const NA_ECO_COLORS = {
-    "ARCTIC CORDILLERA": "#7BAFD4",
-    "EASTERN TEMPERATE FORESTS": "#5DAF5A",
-    "GREAT PLAINS": "#E8C547",
-    "HUDSON PLAIN": "#A0B8C4",
-    "MARINE WEST COAST FOREST": "#3F7F5F",
-    "MEDITERRANEAN CALIFORNIA": "#D96C3F",
-    "NORTH AMERICAN DESERTS": "#E3C29D",
-    "NORTHERN FORESTS": "#4C8F4A",
-    "NORTHWESTERN FORESTED MOUNTAINS": "#6A8E7F",
-    "SOUTHERN SEMIARID HIGHLANDS": "#C49A6C",
-    "TAIGA": "#2F5E4E",
-    "TEMPERATE SIERRAS": "#8C7F6B",
-    "TROPICAL DRY FORESTS": "#C8A641",
-    "TROPICAL WET FORESTS": "#1E8E5A",
-    "TUNDRA": "#B5B5B5",
-    "WATER": "#4F81BD"
+    "ARCTIC CORDILLERA":"#7BAFD4",
+    "EASTERN TEMPERATE FORESTS":"#5DAF5A",
+    "GREAT PLAINS":"#E8C547",
+    "HUDSON PLAIN":"#A0B8C4",
+    "MARINE WEST COAST FOREST":"#3F7F5F",
+    "MEDITERRANEAN CALIFORNIA":"#D96C3F",
+    "NORTH AMERICAN DESERTS":"#E3C29D",
+    "NORTHERN FORESTS":"#4C8F4A",
+    "NORTHWESTERN FORESTED MOUNTAINS":"#6A8E7F",
+    "SOUTHERN SEMIARID HIGHLANDS":"#C49A6C",
+    "TAIGA":"#2F5E4E",
+    "TEMPERATE SIERRAS":"#8C7F6B",
+    "TROPICAL DRY FORESTS":"#C8A641",
+    "TROPICAL WET FORESTS":"#1E8E5A",
+    "TUNDRA":"#B5B5B5",
+    "WATER":"#4F81BD"
 };
+
 
 // WWF
 const BIOME_COLORS = {
@@ -59,30 +192,29 @@ const WIN_GHP = window.location.hostname.includes("github.io")
     ? "https://raw.githubusercontent.com/Ryan-Erickson911/firedpy/main/firedpy/"
     : new URL("../firedpy/", DOCS_ROOT).href.replace(/\/$/, "");
 
+function ecoLayerStyle(fillColor) {
+    return { color: "#333", weight: 1, fillColor: fillColor || "#464646", fillOpacity: 0.7 };
+}
+
 const wwf_ecoLayer = L.geoPackageFeatureLayer([], {
     geoPackageUrl: `${WIN_GHP}/data/world_eco_regions/wwf_terr_ecos.gpkg`,
     layerName: 'wwf_terr_ecos',
-    style: function(feature) {
-        return {
-            color: "#333",
-            weight: 1,
-            fillColor: BIOME_COLORS[feature.properties.BIOME] || "#464646",
-            fillOpacity: 0.7
-        };
-    },
+    style: feature => ecoLayerStyle(BIOME_COLORS[feature.properties.BIOME]),
 });
-console.log(WIN_GHP)
+
+const toTitleCase = text =>
+    text.toLowerCase().replace(/\b\w/g, letter => letter.toUpperCase());
+
 const na3_ecoLayer = L.geoPackageFeatureLayer([], {
     geoPackageUrl: `${WIN_GHP}/data/na_eco/NA_CEC_Eco_Level3.gpkg`,
     layerName: 'NA_CEC_Eco_Level3',
-    style: function(feature) {
-        return {
-            color: "#333",
-            weight: 1,
-            fillColor: NA_ECO_COLORS[feature.properties.NA_L1NAME] || "#464646",
-            fillOpacity: 0.7
-        };
-    },
+    style: feature => ecoLayerStyle(NA_ECO_COLORS[feature.properties.NA_L1NAME]),
+    onEachFeature: (feature, layer) => {
+        const name = feature.properties.NA_L1NAME;
+        if (name) {
+            layer.bindTooltip(toTitleCase(name));
+        }
+    }
 });
 
 const southWest = L.latLng(90, -180);
@@ -131,7 +263,7 @@ function renderLegend() {
     const colorEntries = [];
 
     if (map.hasLayer(na3_ecoLayer)) {
-        colorEntries.push(...Object.entries(NA_ECO_COLORS).map(([label, color]) => buildLegendRow(label, color)));
+        colorEntries.push(...Object.entries(NA_ECO_COLORS).map(([label, color]) => buildLegendRow(label.toLowerCase().replace(/\b\w/g, letter => letter.toUpperCase()), color)));
     }
 
     if (map.hasLayer(wwf_ecoLayer)) {
@@ -175,12 +307,13 @@ function reorderOverlays() {
     });
 }
 
-function buildDropdowns(allRows, allHeaders, filterText = "", unCode = null) {
+function buildDropdowns(allRows, allHeaders, filterText = "", unCode = null, preserveSelection = false) {
     const filter = filterText.trim().toLowerCase();
     const unFilter = unCode === null || unCode === undefined ? "" : String(unCode).trim();
     const tree = {};
     let firstMatch;
-    const rows = allRows.slice(1).map(row => row.split(',').map(value => value.trim()));
+    const currentSelection = preserveSelection ? savedDropdownSelection : null;
+    const rows = allRows.slice(1);
 
     const regionCol = allHeaders.indexOf('REGION');
     const subregionCol = allHeaders.indexOf('SUBREGION');
@@ -222,7 +355,25 @@ function buildDropdowns(allRows, allHeaders, filterText = "", unCode = null) {
         tree[region][subregion][country].push({ name, sparam, tparam, datasets });
     });
 
-    populateRegion(tree, filter || unFilter ? firstMatch : null);
+    const selected = currentSelection || ((unFilter || (filter && !mapLayout.classList.contains("table-mode"))) ? firstMatch : null);
+    populateRegion(tree, selected);
+    renderTable();
+}
+
+function addSortedOptions(select, values) {
+    Object.keys(values).sort().forEach(value => {
+        select.innerHTML += `<option value="${value}">${value}</option>`;
+    });
+}
+
+function recordDropdownChange() {
+    dropdownFiltersChanged = true;
+    savedDropdownSelection = {
+        region: regionSelect.value,
+        subregion: subregionSelect.value,
+        country: countrySelect.value
+    };
+    renderTable();
 }
 
 function populateRegion(tree, selected = null) {
@@ -231,11 +382,13 @@ function populateRegion(tree, selected = null) {
     countrySelect.innerHTML = `<option value="">Select Country</option>`;
     datasetSelect.innerHTML = "";
 
-    Object.keys(tree).sort().forEach(region => {
-        regionSelect.innerHTML += `<option value="${region}">${region}</option>`;
-    });
+    addSortedOptions(regionSelect, tree);
 
-    regionSelect.onchange = () => populateSubregion(tree, regionSelect.value, selected);
+    regionSelect.onchange = () => {
+        userChangedFilters = true;
+        populateSubregion(tree, regionSelect.value, selected);
+        recordDropdownChange();
+    };
 
     if (selected) {
         regionSelect.value = selected.region;
@@ -248,11 +401,13 @@ function populateSubregion(tree, region, selected = null) {
 
     if (!region || !tree[region]) return;
 
-    Object.keys(tree[region]).sort().forEach(sr => {
-        subregionSelect.innerHTML += `<option value="${sr}">${sr}</option>`;
-    });
+    addSortedOptions(subregionSelect, tree[region]);
 
-    subregionSelect.onchange = () => populateCountry(tree, region, subregionSelect.value, selected);
+    subregionSelect.onchange = () => {
+        userChangedFilters = true;
+        populateCountry(tree, region, subregionSelect.value, selected);
+        recordDropdownChange();
+    };
 
     if (selected && selected.region === region) {
         subregionSelect.value = selected.subregion;
@@ -283,14 +438,14 @@ function populateCountry(tree, region, subregion, selected = null) {
 
     if (!subregion || !tree[region]?.[subregion]) return;
 
-    Object.keys(tree[region][subregion]).sort().forEach(country => {
-        countrySelect.innerHTML += `<option value="${country}">${country}</option>`;
-    });
+    addSortedOptions(countrySelect, tree[region][subregion]);
 
     countrySelect.onchange = () => {
+        userChangedFilters = true;
         const selectedCountry = countrySelect.value;
         populateDatasets(tree, region, subregion, selectedCountry);
         zoomToCountry(selectedCountry);
+        recordDropdownChange();
     };
 
     if (selected && selected.region === region && selected.subregion === subregion) {
@@ -347,8 +502,10 @@ function hasDatasetValue(value) {
 fetch(new URL("un_readme_params.csv", MAP_ROOT))
     .then(response => response.text())
     .then(csvText => {
-        const rows = csvText.trim().split(/\r?\n/);
-        const headers = rows[0].split(',');
+        const rows = parseCsv(csvText);
+        const headers = rows[0];
+        tableHeaders = headers;
+        tableRows = rows.slice(1).filter(row => row.length > 1);
         const unIndex = headers.indexOf('UN');
         const spatialIndex = headers.indexOf('spatial');
         const temporalIndex = headers.indexOf('temporal');
@@ -356,8 +513,7 @@ fetch(new URL("un_readme_params.csv", MAP_ROOT))
         const version2Index = headers.indexOf('V2024S1T5');
         const unRowCounts = {};
 
-        rows.slice(1).forEach(row => {
-            const values = row.split(',').map(value => value.trim());
+        tableRows.forEach(values => {
             const value = values[unIndex];
 
             if (value && value.toLowerCase() !== 'null') {
@@ -375,10 +531,21 @@ fetch(new URL("un_readme_params.csv", MAP_ROOT))
 
         buildDropdowns(rows, headers);
         searchBox.addEventListener("input", e => {
+            userChangedFilters = false;
+            clearSearchButton.hidden = !e.target.value;
             buildDropdowns(rows, headers, e.target.value);
+        });
+        clearSearchButton.addEventListener("click", () => {
+            searchBox.value = "";
+            clearSearchButton.hidden = true;
+            buildDropdowns(rows, headers, "", null, dropdownFiltersChanged);
         });
         resetButton.addEventListener("click", () => {
             searchBox.value = "";
+            clearSearchButton.hidden = true;
+            userChangedFilters = false;
+            dropdownFiltersChanged = false;
+            savedDropdownSelection = null;
             buildDropdowns(rows, headers);
         });
         firedpyLayer = new L.GeoJSON.AJAX(new URL("countries_with_params.geojson", MAP_ROOT).href, {
@@ -462,13 +629,9 @@ function refreshEcoLegend() {
 function enforceSingleEcoLayer(activeLayer) {
     if (!activeLayer) return;
 
-    if (activeLayer === wwf_ecoLayer && map.hasLayer(na3_ecoLayer)) {
-        map.removeLayer(na3_ecoLayer);
-    }
-
-    if (activeLayer === na3_ecoLayer && map.hasLayer(wwf_ecoLayer)) {
-        map.removeLayer(wwf_ecoLayer);
-    }
+    const otherLayer = activeLayer === wwf_ecoLayer ? na3_ecoLayer
+        : activeLayer === na3_ecoLayer ? wwf_ecoLayer : null;
+    if (otherLayer && map.hasLayer(otherLayer)) map.removeLayer(otherLayer);
 
     refreshEcoLegend();
 }

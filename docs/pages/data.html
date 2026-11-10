@@ -17,7 +17,7 @@
 		<div id="scrollheader">
 			<logo><img src="../imgs/earthlab_homepage.png" style="width: 150px;"/><a href="https://earthlab.colorado.edu"></a></logo>	
 			<li><a href="../index.html" class="button">Home</a></li>
-			<li><a href="#two" class="button">Data</a></li>
+			<li><a href="#top" class="button">Data</a></li>
 			<li><a href="documentation.html" class="button">Documentation</a></li>
 			<li><a href="authors.html" class="button" style="transition: 0.5s ease;">Authors</a></li>
 			<li><a href="https://cires.colorado.edu/" class="button" target='_blank'>CIRES</a></li>
@@ -33,17 +33,65 @@
 				<div class="row gtr-150">
 					<div class="col-12">
 						<header class="major">
-							<h1 style="margin:0;">Proccessed Countries</h1>
+							<h1 style="margin:0;">Data</h1>
 						</header>
-						<p style="margin: 0 0 0.5em 0;">Already-created products are displayed below. They are housed in the CU Scholar data repository in the <a href="https://scholar.colorado.edu/collections/pz50gx05h" style="border-bottom: dotted 1px #666;">Earth Lab Data collection</a>, or <a href="https://scholar.colorado.edu/catalog?f%5Bacademic_affiliation_sim%5D%5B%5D=Earth+Lab&locale=en" style="border-bottom: dotted 1px #666;">here</a>.
-							All of the created products have an event-level shapefile in .gpkg and .shp formats. Most countries also have the daily-level shapefile for the V2024 products, but for the V2022 products these were not created for most countries in Africa and Asia due to computational restrictions.<br><br>Click on, or search for, your favorite country to view avaliable fire perimeter datasets:</p>
+						<p style="margin: 0 0 0.5em 0;">
+							Already-created products are displayed below. They are housed in the CU Scholar data 
+							repository in the 
+							<a href="https://scholar.colorado.edu/collections/pz50gx05h" style="border-bottom: dotted 1px #666;">Earth Lab Data collection</a>, 
+							or <a href="https://scholar.colorado.edu/catalog?f%5Bacademic_affiliation_sim%5D%5B%5D=Earth+Lab&locale=en" style="border-bottom: dotted 1px #666;">here</a>.
+							All of the created products have an event-level shapefile in .gpkg and .shp formats. 
+							Most countries also have the daily-level shapefile for the V2024 products, but for 
+							the V2022 products these were not created for most countries in Africa and Asia due 
+							to computational restrictions.
+						</p>
+						<header>
+							<h3 style="margin:0;">Run your own analysis!</h3>
+						</header>
+						<p style="margin: 0 0 0.5em 0;">
+							If you can't find a country, spatial, or temporal resolution that fits your needs, view the installation and example <a href="releases.html" style="border-bottom: dotted 1px #666;">here</a>.
+						</p>
+						<header>
+							<h3 style="margin:0;">Datasets</h3>
+						</header>
+						<p style="margin: 0 0 0.5em 0;">
+							Click on, or search for, your favorite country in the display below 
+							to view avaliable fire perimeter datasets. A description of each version can be 
+							found <a href="releases.html" style="border-bottom: dotted 1px #666;">here</a>.
+						</p>
+						<p style="margin: 0 0 0.5em 0;">
+							The map may take a second to load when viewing the Eco Region layers!	
+						</p>
 					</div>
 				</div>
 			</div>
-			<center><div id="map-layout"><div id="map"></div>
+			<center><div id="map-layout">
+				<div id="map"></div>
+				<div id="tableView" hidden>
+					<p id="tableStatus" role="status"></p>
+					<div class="table-scroll">
+						<table id="datasetTable">
+							<thead>
+								<tr>
+									<th>Region</th>
+									<th>Subregion</th>
+									<th>Country</th>
+									<th>V2022</th>
+									<th>V2024S1T5</th>
+									<th>V2025 spatial</th>
+									<th>V2025 temporal</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+				</div>
 				<div id="sidebar" >
-					<h2 style="color: black; text-align: center; margin:0">Avaliable Data</h2>
-					<div class="legend">
+					<h5 class="view-toggle" aria-label="Choose data view">
+						<button id="mapViewButton" type="button" aria-pressed="true">Map</button>
+						<button id="tableViewButton" type="button" aria-pressed="false">Table</button>
+					</h5>
+					<center><div class="legend">
 						<div class="legend-item">
 							<span class="square sq1"></span>1
 						</div>
@@ -56,15 +104,18 @@
 						<div class="legend-item">
 							<span class="square sq4"></span>4+
 						</div>
+					</div></center>
+					<div class="search-control">
+						<input id="searchBox" type="text" placeholder="Search for a country..." aria-label="Search for a country">
+						<button id="clearSearchButton" type="button" aria-label="Clear search" title="Clear search" hidden>X</button>
 					</div>
-					<input id="searchBox" type="text" placeholder="Search for a country..." style="width:100%; padding:6px; margin-bottom:8px; height:30px; color:black">
 					<select id="regionSelect"></select>
 					<select id="subregionSelect"></select>
 					<select id="countrySelect"></select>
 					<div id="datasetSelect"></div>
 					<button id="resetButton" type="button">Reset</button>
 				</div>
-			</div></center>
+			</div>
 			<script src="../js/firedpy_map.js"></script>
 		</section>
 		<section id="footer">

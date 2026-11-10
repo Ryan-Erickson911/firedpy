@@ -25,29 +25,26 @@
 				<h1><strong>Firedpy</strong> - A MODIS 6 Python CLI for Burn Data and Statistics</h1>
 			</div>
 		</section>
-		<section class="main style1 special" id="four" >
+		<section class="main style2">
 			<div class="container" style="text-align: left;">
 				<header class="major">
 					<h1>Parameters</h1>
-				</header>     
-				<h3>Have you used FIREDpy?</h3>
-				<p style="text-align: left;">The algorithm and derived data products are under active development. Please raise an issue with any suggestions to help us improve firedpy. Or just email Adam and he will be overjoyed to talk about firedpy. If you'd like to contribute, check out the GitHub</p>
-				<ul class="actions special">
-					<li><a href="mailto::admahood@duck.com" class="button wide primary">Contact</a></li>
-					<li><a href="https://github.com/earthlab/firedpy" class="button wide primary">Contribute</a></li>
-				</ul>
+				</header>  
+				<p style="color: #fff;">The user is able to specify the spatial and temporal parameters of the window, as well as the spatial and temporal extent, using either a shapefile or a list of MODIS Sinusoidal Projection tile IDs. Countries, continents and US states are included. Any area from the world may be selected. </p>
+				<p style="color: #fff;">However, in the current version, memory constraints may limit the extent available for a single model run. Equatorial regions have much more fire activity, and may require much more RAM to process than a normal laptop will have.</p>
+				<p style="color: #fff;">The algorithm outputs shapefiles of delineated fire events in either .shp or .gpkg format. In addition to the full event polygons created by default, and the user has the option of having firedpy produce daily-level perimeters, providing a representation of both final and expanding event perimeters.</p>
 			</div>
 		</section>		
-		<section class="main style2 special">
+		<section class="main style1 special">
 			<div class="container">
-				<table>
+				<table class="parameters-table">
 					<thead>
 						<tr>
-							<th>option</th>
-							<th>parameter</th>
-							<th>value(s)</th>
-							<th>example</th>
-							<th>description</th>
+							<th>Option</th>
+							<th>Parameter</th>
+							<th>Value(s)</th>
+							<th>Example</th>
+							<th>Description</th>
 						</tr>
 					</thead>
 					<tbody>
